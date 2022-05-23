@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>txtboxJobDescription</name>
+   <tag></tag>
+   <elementGuidId>0917c5e8-8dc9-4c33-8946-707ad9041324</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>input[name='projectName']</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>textarea[name='briefDescription']</value>
+      </entry>
+      <entry>
+         <key>BASIC</key>
+         <value></value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>CSS</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+</WebElementEntity>

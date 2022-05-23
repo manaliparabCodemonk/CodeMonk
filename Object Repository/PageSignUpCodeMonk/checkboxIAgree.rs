@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>checkboxIAgree</name>
+   <tag></tag>
+   <elementGuidId>ba563618-4fa0-4326-b60d-009d3d745f88</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>span.checkmark.rounded-1</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='app']/div/div[2]/div[2]/div/div/div/form/div/div/p[4]/small/div/div/label/span</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>CSS</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>span</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>checkmark rounded-1</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;app&quot;)/div[1]/div[@class=&quot;styles__SignInContent-sc-1lnwj9y-3 joHtOJ layout-v2&quot;]/div[@class=&quot;styles__RightSection-sc-1lnwj9y-1 jxDbiC&quot;]/div[@class=&quot;inner-content my-auto&quot;]/div[@class=&quot;ContainerMod-zv7204-0 IIUgy w-auto p-0 container&quot;]/div[@class=&quot;Card-fhbg3m-0 cGuXWM p-0 bg-transparent&quot;]/form[1]/div[@class=&quot;OnboardingForm-bkqf63-0 lizanc&quot;]/div[@class=&quot;OnboardingForm__OnBoardingFormBody-bkqf63-1 jvWTLk m-0&quot;]/p[@class=&quot;P-tiusvc-0 hxrvHG mt-4 text-start&quot;]/small[1]/div[@class=&quot;form-group position-relative form-group&quot;]/div[@class=&quot;Input__CheckBoxContainer-b1cggb-8 dSohfw  form-control-validated&quot;]/label[@class=&quot;checkbox-label small&quot;]/span[@class=&quot;checkmark rounded-1&quot;]</value>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='app']/div/div[2]/div[2]/div/div/div/form/div/div/p[4]/small/div/div/label/span</value>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//small/div/div/label/span</value>
+   </webElementXpaths>
+</WebElementEntity>

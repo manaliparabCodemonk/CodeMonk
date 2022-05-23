@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>txtboxProjectDuration</name>
+   <tag></tag>
+   <elementGuidId>ade1b840-4c09-4a72-bf8d-39538e585969</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>//input[@name='preferredProjectDuration']/ancestor::div[contains(@class,'custom-multi-select')]//input[contains(@id,'react-select-')]</value>
+      </entry>
+      <entry>
+         <key>BASIC</key>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//input[@name='preferredProjectDuration']/ancestor::div[contains(@class,'custom-multi-select')]//input[contains(@id,'react-select-')]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+</WebElementEntity>

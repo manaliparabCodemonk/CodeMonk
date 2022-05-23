@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>txtboxMinDuration</name>
+   <tag></tag>
+   <elementGuidId>175de9c6-8682-4a20-8200-efe1baa26e22</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>input[name='briefDuration']</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>input[name='projectName']</value>
+      </entry>
+      <entry>
+         <key>BASIC</key>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>CSS</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+</WebElementEntity>

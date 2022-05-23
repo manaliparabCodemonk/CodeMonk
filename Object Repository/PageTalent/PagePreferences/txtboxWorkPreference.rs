@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>txtboxWorkPreference</name>
+   <tag></tag>
+   <elementGuidId>8cc75876-ac16-4426-99d5-b9e6f616fee7</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>//input[@name='preferredProjectDuration']/ancestor::div[contains(@class,'custom-multi-select')]//input[contains(@id,'react-select-')]</value>
+      </entry>
+      <entry>
+         <key>BASIC</key>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//input[@name='workPreference']/ancestor::div[contains(@class,'custom-multi-select')]//input[contains(@id,'react-select-')]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+</WebElementEntity>
