@@ -15,49 +15,7 @@
       <guid>f5d5442a-8d26-4010-8681-6997cbf9c9a8</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/TalentSignUpTestCases/TalentSignUp</testCaseId>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>1751eb45-6246-4bca-b7f3-c2adc87c2190</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/TalentSignUpTestCases/EnterDetailsTalentAboutYou</testCaseId>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>5ce782a0-97eb-4fa6-86cc-e28435b22159</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/TalentSignUpTestCases/EnterDetailsQualifications</testCaseId>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>d84945f6-0563-4dd6-afbd-d6920773304e</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/TalentSignUpTestCases/EnterDetailsExperience</testCaseId>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>5945850f-8148-410a-8710-f751d26dc3d7</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/TalentSignUpTestCases/EnterDetailsProjects</testCaseId>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>00e2ae68-26b2-4e80-b445-4cd773c86092</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/TalentSignUpTestCases/EnterDetailsPreferences</testCaseId>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>855fc796-e968-42cd-80e5-cd3d1b3134f8</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/TalentSignUpTestCases/EnterDetailsSalaryBilling</testCaseId>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>0fede84e-f68c-4bbb-bfa0-26b51379da46</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/TalentSignUpTestCases/EnterDetailsDocumentUpload</testCaseId>
+      <testCaseId>Test Cases/TalentTestCases/TalentSignUp</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>c81cc941-f58c-415f-9d23-f78d024b5f2c</guid>

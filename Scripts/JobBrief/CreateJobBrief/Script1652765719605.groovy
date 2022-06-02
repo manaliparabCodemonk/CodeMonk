@@ -97,7 +97,7 @@ WebUI.delay(2)
 
 WebUI.click(findTestObject('Dashboard/PageJobBrief/CreateJobBrief/btnReviewTalents'))
 
-WebUI.click(findTestObject('PageSignUpCodeMonk/btnContinueWithFreePlan'))
+WebUI.click(findTestObject('SignUp/btnContinueWithFreePlan'))
 
 WebUI.click(findTestObject('Dashboard/LeftPanelMenu/btnJobBriefs'))
 

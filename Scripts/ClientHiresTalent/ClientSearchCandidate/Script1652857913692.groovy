@@ -21,6 +21,6 @@ WebUI.click(findTestObject('Dashboard/PageJobBrief/LiveOpportunities/btnSearchCa
 
 WebUI.delay(1)
 
-WebUI.click(findTestObject('PageSignUpCodeMonk/btnContinueWithFreePlan'))
+WebUI.click(findTestObject('SignUp/btnContinueWithFreePlan'))
 
 WebUI.delay(1)

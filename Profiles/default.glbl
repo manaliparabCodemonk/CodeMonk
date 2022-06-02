@@ -11,7 +11,17 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>''</initValue>
-      <name>Email</name>
+      <initValue>'AutoTest-non-disposable7556@mailinator.com'</initValue>
+      <name>EmailTalent</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'codemonk.ai/talent/about-you'</initValue>
+      <name>TalentLoginLink</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'AutoTest@123'</initValue>
+      <name>Password</name>
    </GlobalVariableEntity>
 </GlobalVariableEntities>

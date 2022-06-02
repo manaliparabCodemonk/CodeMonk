@@ -29,10 +29,9 @@ WebUI.executeJavaScript('window.open();', [])
 WebUI.switchToWindowIndex(currentTab + 1)
 
 WebUI.navigateToUrl('https://www.mailinator.com/v4/public/inboxes.jsp')
-System.out.println("Email");
-System.out.println(email);
 
-WebUI.sendKeys(findTestObject('PageMailinator/txtboxPublicMessages'), email)
+
+WebUI.sendKeys(findTestObject('PageMailinator/txtboxPublicMessages'), GlobalVariable.EmailTalent)
 
 WebUI.click(findTestObject('PageMailinator/btnGO'))
 

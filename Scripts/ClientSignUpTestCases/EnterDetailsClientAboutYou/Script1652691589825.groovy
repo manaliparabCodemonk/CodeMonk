@@ -17,9 +17,9 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.click(findTestObject('PageTalent/PageTalentAboutYouCodeMonk/txtBoxFirstName'))
+WebUI.click(findTestObject('PageTalent/PageTalentAboutYouCodeMonk/First Name'))
 
-WebUI.sendKeys(findTestObject('PageTalent/PageTalentAboutYouCodeMonk/txtBoxFirstName'), 'Test1 ')
+WebUI.sendKeys(findTestObject('PageTalent/PageTalentAboutYouCodeMonk/First Name'), 'Test1 ')
 
 WebUI.click(findTestObject('PageTalent/PageTalentAboutYouCodeMonk/txtBoxLastName'))
 

@@ -30,25 +30,25 @@ WebUI.navigateToUrl(GlobalVariable.URL)
 
 WebUI.maximizeWindow()
 
-WebUI.click(findTestObject('PageSignUpCodeMonk/btnEmployer'))
+WebUI.click(findTestObject('SignUp/btnEmployer'))
 
 email = CustomKeywords.'com.CommonFunctions.Helper.generateRandomEmail'()
 
-WebUI.sendKeys(findTestObject('PageSignUpCodeMonk/txtboxEmail'), email)
+WebUI.sendKeys(findTestObject('SignUp/txtboxEmail'), email)
 
-WebUI.sendKeys(findTestObject('PageSignUpCodeMonk/txtboxPassword'), 'AutoTest@123')
+WebUI.sendKeys(findTestObject('SignUp/txtboxPassword'), 'AutoTest@123')
 
-WebUI.click(findTestObject('PageSignUpCodeMonk/checkboxIAgree'))
+WebUI.click(findTestObject('SignUp/checkboxIAgree'))
 
-WebUI.click(findTestObject('PageSignUpCodeMonk/btn_Signup'))
+WebUI.click(findTestObject('SignUp/btn_Signup'))
 
-WebUI.waitForElementPresent(findTestObject('PageSignUpCodeMonk/txtboxVerificationCode'), 10)
+WebUI.waitForElementPresent(findTestObject('SignUp/txtboxVerificationCode'), 10)
 
 code = WebUI.callTestCase(findTestCase('CommonTestCases/getVerificationCode'), [('email') : email], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.sendKeys(findTestObject('PageSignUpCodeMonk/txtboxVerificationCode'), code)
+WebUI.sendKeys(findTestObject('SignUp/txtboxVerificationCode'), code)
 
 WebUI.delay(5)
 
-WebUI.click(findTestObject('PageSignUpCodeMonk/btnContinueWithFreePlan'))
+WebUI.click(findTestObject('SignUp/btnContinueWithFreePlan'))
 

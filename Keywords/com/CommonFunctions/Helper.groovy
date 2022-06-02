@@ -32,13 +32,40 @@ import com.kms.katalon.core.testobject.ResponseObject
 import com.kms.katalon.core.testobject.ConditionType
 import com.kms.katalon.core.testobject.TestObjectProperty
 
+import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.mobile.helper.MobileElementCommonHelper
 import com.kms.katalon.core.util.KeywordUtil
 
 import com.kms.katalon.core.webui.exception.WebElementNotFoundException
 
-
+import com.kms.katalon.core.testdata.reader.ExcelFactory as ExcelFactory
+import com.kms.katalon.core.testdata.ExcelData
 class Helper {
+	String[][] testData = null
+	int lstRow,lstCol
+
+	@Keyword
+	def readTestData(String filePath,String sheetName) {
+		//String TESTDATA_FOLDER = System.getProperty('user.dir') + '\\Data Files\\CodemonkTestdata.xls'
+		//String sheetName = 'TalentSignUp'
+		Object excelData = ExcelFactory.getExcelDataWithDefaultSheet(filePath, sheetName, true)
+
+		lstRow=excelData.getRowNumbers()
+		lstCol=excelData.getColumnNumbers()
+		testData = new String[lstRow+1][lstCol+1];
+
+		for(int row = 1; row < lstRow +1 ; row ++) {
+
+			for(int col = 1; col < lstCol + 1 ; col ++) {
+				testData[row][col]=excelData.getValue(col, row)
+			}
+		}
+		if(testData!=null)
+		{
+			return testData
+		}
+	}
+
 	/**
 	 * Refresh browser
 	 */
