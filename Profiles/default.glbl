@@ -11,7 +11,7 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'AutoTest-non-disposable7556@mailinator.com'</initValue>
+      <initValue>'AutoTest-non-disposable6475@mailinator.com'</initValue>
       <name>EmailTalent</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
@@ -23,5 +23,10 @@
       <description></description>
       <initValue>'AutoTest@123'</initValue>
       <name>Password</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>findTestData('CodemonkTestdata (1)')</initValue>
+      <name>testData</name>
    </GlobalVariableEntity>
 </GlobalVariableEntities>

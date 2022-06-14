@@ -16,35 +16,34 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
+import junit.framework.TestSuite as TestSuite
 import org.openqa.selenium.Keys as Keys
+import com.kms.katalon.core.testobject.ConditionType as ConditionType
 
-String code = ''
+String code
 
-String currentPage = WebUI.getUrl()
+GlobalVariable.EmailTalent
 
-int currentTab = WebUI.getWindowIndex()
+GlobalVariable.Password
 
-WebUI.executeJavaScript('window.open();', [])
+GlobalVariable.EmailTalent = CustomKeywords.'com.CommonFunctions.Helper.generateRandomEmail'()
 
-WebUI.switchToWindowIndex(currentTab + 1)
+WebUI.sendKeys(findTestObject('SignUp/txtboxEmail'), GlobalVariable.EmailTalent)
 
-WebUI.navigateToUrl('https://www.mailinator.com/v4/public/inboxes.jsp')
+System.out.println(GlobalVariable.EmailTalent)
 
-WebUI.sendKeys(findTestObject('PageMailinator/txtboxPublicMessages'), GlobalVariable.EmailTalent)
+GlobalVariable.Password =WebUI.sendKeys(findTestObject('SignUp/txtboxPassword'), 'AutoTest@123')
 
-WebUI.click(findTestObject('PageMailinator/btnGO'))
+WebUI.click(findTestObject('SignUp/checkboxIAgree'))
 
-WebUI.click(findTestObject('PageMailinator/labelFutureofworkcodemonk'))
+WebUI.click(findTestObject('SignUp/btn_Signup'))
 
-WebUI.switchToFrame(findTestObject('PageMailinator/frameEmailBody'), 5)
+WebUI.waitForElementPresent(findTestObject('SignUp/txtboxVerificationCode'), 10)
 
-code = WebUI.getText(findTestObject('PageMailinator/labelCode'))
+code = WebUI.callTestCase(findTestCase('CommonTestCases/getVerificationCode'), [('email') : GlobalVariable.EmailTalent], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.closeWindowIndex(currentTab + 1)
+WebUI.sendKeys(findTestObject('SignUp/txtboxVerificationCode'), code)
 
-WebUI.switchToWindowIndex(currentTab)
+WebUI.waitForElementPresent(findTestObject('PageDashboardCodeMonk/labelDashboard'), 2)
 
-if (code != null) {
-    return code
-	}
 

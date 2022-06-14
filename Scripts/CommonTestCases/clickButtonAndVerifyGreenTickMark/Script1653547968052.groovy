@@ -3,7 +3,6 @@ import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
 import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
 import static com.kms.katalon.core.testobject.ObjectRepository.findWindowsObject
-import com.kms.katalon.core.annotation.Keyword as Keyword
 import com.kms.katalon.core.checkpoint.Checkpoint as Checkpoint
 import com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords as CucumberKW
 import com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords as Mobile
@@ -17,34 +16,12 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
+import org.testng.Assert as Assert
 
-String code = ''
+WebUI.verifyElementClickable(findTestObject('Talent/' + buttonName))
 
-String currentPage = WebUI.getUrl()
+WebUI.click(findTestObject('Talent/' + buttonName))
 
-int currentTab = WebUI.getWindowIndex()
+xpath = (('//button/span[text()=\'' + pageName) + '\']/following-sibling::*[@class=\'tick-icon\']')
 
-WebUI.executeJavaScript('window.open();', [])
-
-WebUI.switchToWindowIndex(currentTab + 1)
-
-WebUI.navigateToUrl('https://www.mailinator.com/v4/public/inboxes.jsp')
-
-WebUI.sendKeys(findTestObject('PageMailinator/txtboxPublicMessages'), GlobalVariable.EmailTalent)
-
-WebUI.click(findTestObject('PageMailinator/btnGO'))
-
-WebUI.click(findTestObject('PageMailinator/labelFutureofworkcodemonk'))
-
-WebUI.switchToFrame(findTestObject('PageMailinator/frameEmailBody'), 5)
-
-code = WebUI.getText(findTestObject('PageMailinator/labelCode'))
-
-WebUI.closeWindowIndex(currentTab + 1)
-
-WebUI.switchToWindowIndex(currentTab)
-
-if (code != null) {
-    return code
-	}
-
+Assert.assertTrue(WebUI.callTestCase(findTestCase('Test Cases/CommonTestCases/clickDynamicObject'), [('xpath') : xpath], FailureHandling.STOP_ON_FAILURE));

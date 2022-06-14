@@ -3,7 +3,6 @@ import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
 import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
 import static com.kms.katalon.core.testobject.ObjectRepository.findWindowsObject
-import com.kms.katalon.core.annotation.Keyword as Keyword
 import com.kms.katalon.core.checkpoint.Checkpoint as Checkpoint
 import com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords as CucumberKW
 import com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords as Mobile
@@ -18,33 +17,29 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-String code = ''
 
-String currentPage = WebUI.getUrl()
+for (int i = 1; i < GlobalVariable.testData.length; i++) {
+	String xlWorkflow = (GlobalVariable.testData[i])[1]
 
-int currentTab = WebUI.getWindowIndex()
+	String xlPageName = (GlobalVariable.testData[i])[2]
 
-WebUI.executeJavaScript('window.open();', [])
+	String xlFieldType = (GlobalVariable.testData[i])[3]
 
-WebUI.switchToWindowIndex(currentTab + 1)
+	String xlFieldLabel = (GlobalVariable.testData[i])[4]
 
-WebUI.navigateToUrl('https://www.mailinator.com/v4/public/inboxes.jsp')
+	String xlFieldValue = (GlobalVariable.testData[i])[5]
 
-WebUI.sendKeys(findTestObject('PageMailinator/txtboxPublicMessages'), GlobalVariable.EmailTalent)
-
-WebUI.click(findTestObject('PageMailinator/btnGO'))
-
-WebUI.click(findTestObject('PageMailinator/labelFutureofworkcodemonk'))
-
-WebUI.switchToFrame(findTestObject('PageMailinator/frameEmailBody'), 5)
-
-code = WebUI.getText(findTestObject('PageMailinator/labelCode'))
-
-WebUI.closeWindowIndex(currentTab + 1)
-
-WebUI.switchToWindowIndex(currentTab)
-
-if (code != null) {
-    return code
+	if (xlFieldValue.contains('Password')) {
+		xlFieldValue = GlobalVariable.Password
+	} else if (xlFieldLabel.contains('Enter your new email address')) {
+		GlobalVariable.EmailTalent = xlFieldValue
+	} else if (xlFieldLabel.contains('New Password')) {
+		GlobalVariable.Password = xlFieldValue
+	} else if (xlFieldLabel.contains('Email')) {
+		xlFieldValue =GlobalVariable.EmailTalent
 	}
-
+	
+	
+	WebUI.callTestCase(findTestCase('Test Cases/CommonTestCases/enterDetails'), [('xlWorkflow') : xlWorkflow, ('xlPageName') : xlPageName
+			, ('xlFieldType') : xlFieldType, ('xlFieldLabel') : xlFieldLabel, ('xlFieldValue') : xlFieldValue], FailureHandling.STOP_ON_FAILURE)
+}

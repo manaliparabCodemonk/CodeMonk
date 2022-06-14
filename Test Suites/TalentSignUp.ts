@@ -15,6 +15,7 @@
       <guid>184598b9-8030-4707-b467-2590226c1729</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/TalentTestCases/TalentSignUp</testCaseId>
+      <testCaseId>Test Cases/TestRunner/TestRunner</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
 </TestSuiteEntity>

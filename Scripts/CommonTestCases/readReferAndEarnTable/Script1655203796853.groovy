@@ -3,7 +3,6 @@ import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
 import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
 import static com.kms.katalon.core.testobject.ObjectRepository.findWindowsObject
-import com.kms.katalon.core.annotation.Keyword as Keyword
 import com.kms.katalon.core.checkpoint.Checkpoint as Checkpoint
 import com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords as CucumberKW
 import com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords as Mobile
@@ -18,33 +17,24 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-String code = ''
+import org.openqa.selenium.By as By
 
-String currentPage = WebUI.getUrl()
+import org.openqa.selenium.WebDriver as WebDriver
 
-int currentTab = WebUI.getWindowIndex()
+import org.openqa.selenium.WebElement as WebElement
 
-WebUI.executeJavaScript('window.open();', [])
+import com.kms.katalon.core.webui.driver.DriverFactory as DriverFactory
 
-WebUI.switchToWindowIndex(currentTab + 1)
+WebDriver driver = DriverFactory.getWebDriver()
+ArrayList<WebElement> rows = driver.findElements(By.xpath(xpath))
+ArrayList<String> jobDetails = new ArrayList<String>();
 
-WebUI.navigateToUrl('https://www.mailinator.com/v4/public/inboxes.jsp')
+for(int i=1;i<rows.size();i++)
+{
+	jobDetails.add(rows.get(i).getText())
+}
 
-WebUI.sendKeys(findTestObject('PageMailinator/txtboxPublicMessages'), GlobalVariable.EmailTalent)
 
-WebUI.click(findTestObject('PageMailinator/btnGO'))
-
-WebUI.click(findTestObject('PageMailinator/labelFutureofworkcodemonk'))
-
-WebUI.switchToFrame(findTestObject('PageMailinator/frameEmailBody'), 5)
-
-code = WebUI.getText(findTestObject('PageMailinator/labelCode'))
-
-WebUI.closeWindowIndex(currentTab + 1)
-
-WebUI.switchToWindowIndex(currentTab)
-
-if (code != null) {
-    return code
+if (jobDetails != null) {
+	return jobDetails
 	}
-

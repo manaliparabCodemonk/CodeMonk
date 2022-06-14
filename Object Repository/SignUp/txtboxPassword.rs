@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>txtboxPassword</name>
+   <tag></tag>
+   <elementGuidId>a240639f-a28e-4085-8d9f-a935a0009989</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>input[name=&quot;password&quot;]</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//input[@name='password']</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>input</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>placeholder</name>
+      <type>Main</type>
+      <value>Password</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>name</name>
+      <type>Main</type>
+      <value>password</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>type</name>
+      <type>Main</type>
+      <value>password</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>Input__FormControl-b1cggb-1 bSdorI form-control</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;app&quot;)/div[1]/div[@class=&quot;styles__SignInContent-sc-1lnwj9y-3 joHtOJ layout-v2&quot;]/div[@class=&quot;styles__RightSection-sc-1lnwj9y-1 jxDbiC&quot;]/div[@class=&quot;inner-content my-auto&quot;]/div[@class=&quot;ContainerMod-zv7204-0 IIUgy w-auto p-0 container&quot;]/div[@class=&quot;Card-fhbg3m-0 cGuXWM p-0 bg-transparent&quot;]/form[1]/div[@class=&quot;OnboardingForm-bkqf63-0 lizanc&quot;]/div[@class=&quot;OnboardingForm__OnBoardingFormBody-bkqf63-1 jvWTLk m-0&quot;]/div[@class=&quot;position-relative form-group&quot;]/div[@class=&quot;signup-styles__PasswordFieldWrapper-sc-99i315-0 eumCQZ&quot;]/div[@class=&quot;w-100&quot;]/div[@class=&quot;Input__FormControlWrapper-b1cggb-6 kMxVjj  no-icon&quot;]/input[@class=&quot;Input__FormControl-b1cggb-1 bSdorI form-control&quot;]</value>
+   </webElementProperties>
+</WebElementEntity>
