@@ -15,25 +15,47 @@
       <guid>34b7b71d-3e4c-403f-a3ad-30c8cd55a02d</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/CommonTestCases/launchBrowser</testCaseId>
+      <testCaseId>Test Cases/CommonTestCases/Launch Browser</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>5ce1b64f-2ca9-45a9-a61c-ae87ffce4f47</variableId>
+      </variableLink>
    </testCaseLink>
    <testCaseLink>
       <guid>864bfb4b-8143-42ff-a955-f34aee71574c</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/TalentTestCases/TalentLogin</testCaseId>
+      <testCaseId>Test Cases/TalentTestCases/Login</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>2e3429cf-0cd9-4cdf-8430-712244cd1ee7</variableId>
+      </variableLink>
    </testCaseLink>
    <testCaseLink>
       <guid>e636cba4-0aa1-4df1-a6a6-7ee76ec21686</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/TalentTestCases/TalentSignUp</testCaseId>
+      <testCaseId>Test Cases/TalentTestCases/Sign Up</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>83abc1e8-2862-4442-9d14-e6dd2969e88a</variableId>
+      </variableLink>
    </testCaseLink>
    <testCaseLink>
       <guid>eb26fc64-8c10-44b6-88ef-b34293e4494b</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/CommonTestCases/readTestData</testCaseId>
+      <testCaseId>Test Cases/CommonTestCases/Read Test Data</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
       <variableLink>
          <testDataLinkId></testDataLinkId>
          <type>DEFAULT</type>
@@ -51,7 +73,8 @@
       <guid>28bb0426-2b03-4cfb-9436-36af5e4b6ac6</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/CommonTestCases/verifyLink</testCaseId>
+      <testCaseId>Test Cases/CommonTestCases/Verify Link</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
       <variableLink>
          <testDataLinkId></testDataLinkId>
          <type>DEFAULT</type>
@@ -63,18 +86,21 @@
       <guid>0e402734-d3ed-4ca5-bfae-fdb94e528f26</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/TalentTestCases/EnterDetailsForms</testCaseId>
+      <testCaseId>Test Cases/TalentTestCases/Enter Details Forms</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
       <guid>fe4405f3-ea55-41d8-b967-fb3d6416f5a5</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/CommonTestCases/clickButtonAndVerifyGreenTickMark</testCaseId>
+      <testCaseId>Test Cases/CommonTestCases/Verify Green Tick Mark And Progress</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
       <guid>b0823509-9fd4-4745-8525-6a796d59123e</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/CommonTestCases/logoutTalent</testCaseId>
+      <testCaseId>Test Cases/CommonTestCases/Logout Profile</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
 </TestSuiteEntity>

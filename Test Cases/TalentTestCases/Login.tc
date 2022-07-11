@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Login</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>00546c59-b2da-45b1-a582-9cd3837cdadc</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>2e3429cf-0cd9-4cdf-8430-712244cd1ee7</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>2e3429cf-0cd9-4cdf-8430-712244cd1ee7</id>
+      <masked>false</masked>
+      <name>WorkFlow</name>
+   </variable>
+</TestCaseEntity>

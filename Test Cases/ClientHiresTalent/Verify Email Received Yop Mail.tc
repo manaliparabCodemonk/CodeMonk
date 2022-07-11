@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Verify Email Received Yop Mail</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>e566afcb-2600-4302-806a-c032b6c4f80b</testCaseGuid>
+</TestCaseEntity>

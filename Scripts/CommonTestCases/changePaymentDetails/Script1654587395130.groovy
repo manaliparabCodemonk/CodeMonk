@@ -40,17 +40,17 @@ String message
 //        GlobalVariable.Password = xlFieldValue
 //    }
 //    
-//    WebUI.callTestCase(findTestCase('Test Cases/CommonTestCases/enterDetails'), [('xlWorkflow') : xlWorkflow, ('xlPageName') : xlPageName
+//    WebUI.callTestCase(findTestCase('Test Cases/CommonTestCases/Enter Details'), [('xlWorkflow') : xlWorkflow, ('xlPageName') : xlPageName
 //            , ('xlFieldType') : xlFieldType, ('xlFieldLabel') : xlFieldLabel, ('xlFieldValue') : xlFieldValue], FailureHandling.STOP_ON_FAILURE)
 //}
 
-WebUI.callTestCase(findTestCase('Test Cases/CommonTestCases/enterDetailsCommon'), FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Test Cases/CommonTestCases/Enter Details Common'),['testData' : GlobalVariable.testData], FailureHandling.STOP_ON_FAILURE)
 
 //Verify text email is changed successfully
 WebUI.verifyElementText(findTestObject('Profile/Account settings/VerifyPaymentdetailsmessage'), 'Your payment details has been successfully saved.')
 
 //Retrieve Message
-message = WebUI.callTestCase(findTestCase('CommonTestCases/getEmailChangeVerificationCode'), [('email') : GlobalVariable.EmailTalent], 
+message = WebUI.callTestCase(findTestCase('CommonTestCases/Get Email Change Verification Code'), [('email') : GlobalVariable.EmailTalent], 
     FailureHandling.STOP_ON_FAILURE)
 
 System.out.println(message)

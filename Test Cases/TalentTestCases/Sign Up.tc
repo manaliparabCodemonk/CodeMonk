@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Sign Up</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>7f229286-92b4-475d-8246-589a9c22e4c2</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>83abc1e8-2862-4442-9d14-e6dd2969e88a</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>83abc1e8-2862-4442-9d14-e6dd2969e88a</id>
+      <masked>false</masked>
+      <name>workFlow</name>
+   </variable>
+</TestCaseEntity>

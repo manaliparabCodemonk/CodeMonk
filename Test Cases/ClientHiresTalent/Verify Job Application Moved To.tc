@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Verify Job Application Moved To</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>27c07be0-1217-4987-89f6-9354320b6bd3</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>c6ea27f5-2c9f-4286-93a5-c8bd5fe714d5</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>c6ea27f5-2c9f-4286-93a5-c8bd5fe714d5</id>
+      <masked>false</masked>
+      <name>ToAction</name>
+   </variable>
+</TestCaseEntity>

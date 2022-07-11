@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Launch Browser</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>8e720c4f-6620-4f7f-aaeb-0abbf46cc94a</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>5ce1b64f-2ca9-45a9-a61c-ae87ffce4f47</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>5ce1b64f-2ca9-45a9-a61c-ae87ffce4f47</id>
+      <masked>false</masked>
+      <name>workflow</name>
+   </variable>
+</TestCaseEntity>

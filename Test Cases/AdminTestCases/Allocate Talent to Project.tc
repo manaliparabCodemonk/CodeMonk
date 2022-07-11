@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Allocate Talent to Project</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>cfb932a2-faae-4df3-b7c8-a8696e4bfb05</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>f1f958f8-b974-4072-a05e-cd7010b2e043</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>f1f958f8-b974-4072-a05e-cd7010b2e043</id>
+      <masked>false</masked>
+      <name>ProjectName</name>
+   </variable>
+</TestCaseEntity>

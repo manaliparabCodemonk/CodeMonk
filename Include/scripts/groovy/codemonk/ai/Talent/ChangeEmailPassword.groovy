@@ -46,8 +46,11 @@ class ChangeEmailPassword {
 
 	@When("user selects {string}")
 	public void user_selects(String option) {
+		//Click on Dashbaord
+
+		//Click on menu item
 		xpath="//span[text()='"+option+"']"
-		WebUI.callTestCase(findTestCase('Test Cases/CommonTestCases/clickDynamicObject'), [('xpath') : xpath], FailureHandling.STOP_ON_FAILURE)
+		WebUI.callTestCase(findTestCase('Test Cases/CommonTestCases/Click Dynamic Object'), [('xpath') : xpath], FailureHandling.STOP_ON_FAILURE)
 	}
 
 	@When("user updates {string} and {string}")
@@ -55,9 +58,31 @@ class ChangeEmailPassword {
 		WebUI.callTestCase(findTestCase("Test Cases/CommonTestCases/changeEmailPassword"),['testData' : GlobalVariable.testData,'email' : email,'password' : password],FailureHandling.STOP_ON_FAILURE)
 	}
 
+	@When("user clicks on Profile Edit")
+	public void user_clicks_on_Profile_Edit() {
+		WebUI.click(findTestObject('Profile/Profile Edit'))
+	}
+
 	@When("user updates {string}")
 	public void user_updates(String paymentDetails) {
 		WebUI.callTestCase(findTestCase("Test Cases/CommonTestCases/changePaymentDetails"),['testData' : GlobalVariable.testData,'paymentDetails' : paymentDetails],FailureHandling.STOP_ON_FAILURE)
+	}
+
+	@When("user updates Profile Details")
+	public void user_updates_Profile_Details() {
+		WebUI.callTestCase(findTestCase('Test Cases/CommonTestCases/Enter Details Common'),['testData' : GlobalVariable.testData], FailureHandling.STOP_ON_FAILURE)
+		//Click on Skip to Dashboard
+		WebUI.click(findTestObject('Talent/Skip to Dashboard'))
+
+		//Verify text email is changed successfully
+		WebUI.verifyElementText(findTestObject('Dashboard/VerifyDataSaveMessage'), 'The data is saved successfully. You can continue with onboarding later.')
+	}
+
+	@Then("verify Profile Details are updated")
+	public void verify_Profile_Details_are_updated() {
+		//Verify if data is changed successfully
+		WebUI.verifyElementText(findTestObject('Profile/My Profile/Name'), 'Testfirstname T.')
+
 	}
 
 	@Then("closes browser")

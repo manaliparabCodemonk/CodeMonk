@@ -1,5 +1,5 @@
 {
-  "keywordFileContentHash": "253938BB68995E0CF4918A07E8534C9A",
+  "keywordFileContentHash": "55A4C24F5F248906E17AAB8040A92D1F",
   "keywordClasses": [
     {
       "name": "com.CommonFunctions.Helper",
@@ -93,6 +93,11 @@
           "javadoc": "/**\r\n\t * Get all rows of HTML table\r\n\t * @param table Katalon test object represent for HTML table\r\n\t * @param outerTagName outer tag name of TR tag, usually is TBODY\r\n\t * @return All rows inside HTML table\r\n\t */"
         },
         {
+          "name": "TodayDate",
+          "parameters": [],
+          "javadoc": ""
+        },
+        {
           "name": "generateRandomNumber",
           "parameters": [
             {
@@ -112,8 +117,60 @@
           "javadoc": ""
         },
         {
+          "name": "generateName",
+          "parameters": [
+            {
+              "name": "length",
+              "initialExpression": "",
+              "type": {
+                "fullClassName": "int",
+                "unresolvedClassName": "int",
+                "isArray": false,
+                "isGnericsPlaceHolder": false,
+                "hasImmutableClassName": true,
+                "genericsTypes": [],
+                "errorOnParsing": false
+              }
+            }
+          ],
+          "javadoc": ""
+        },
+        {
           "name": "generateRandomEmail",
-          "parameters": [],
+          "parameters": [
+            {
+              "name": "workFlow",
+              "initialExpression": "",
+              "type": {
+                "fullClassName": "java.lang.String",
+                "unresolvedClassName": "String",
+                "isArray": false,
+                "isGnericsPlaceHolder": false,
+                "hasImmutableClassName": false,
+                "genericsTypes": [],
+                "errorOnParsing": false
+              }
+            }
+          ],
+          "javadoc": ""
+        },
+        {
+          "name": "generateRandomName",
+          "parameters": [
+            {
+              "name": "workFlow",
+              "initialExpression": "",
+              "type": {
+                "fullClassName": "java.lang.String",
+                "unresolvedClassName": "String",
+                "isArray": false,
+                "isGnericsPlaceHolder": false,
+                "hasImmutableClassName": false,
+                "genericsTypes": [],
+                "errorOnParsing": false
+              }
+            }
+          ],
           "javadoc": ""
         }
       ]

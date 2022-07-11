@@ -7,6 +7,36 @@
    <GlobalVariableEntity>
       <description></description>
       <initValue>'https://staging.codemonk.ai/'</initValue>
-      <name>Staging</name>
+      <name>URL</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'codemonk.ai/talent/about-you'</initValue>
+      <name>TalentLoginLink</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>findTestData('CodemonkTestdata (1)')</initValue>
+      <name>testData</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>''</initValue>
+      <name>EmailClient</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>''</initValue>
+      <name>EmailTalent</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>''</initValue>
+      <name>PasswordTalent</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>''</initValue>
+      <name>PasswordClient</name>
    </GlobalVariableEntity>
 </GlobalVariableEntities>

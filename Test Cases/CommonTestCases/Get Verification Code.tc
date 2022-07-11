@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Get Verification Code</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>8b24d7ad-72a5-428f-b0ec-d9fe6ba47104</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>1b025eef-2ff6-458d-8663-8665d301daf6</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>1b025eef-2ff6-458d-8663-8665d301daf6</id>
+      <masked>false</masked>
+      <name>Email</name>
+   </variable>
+</TestCaseEntity>

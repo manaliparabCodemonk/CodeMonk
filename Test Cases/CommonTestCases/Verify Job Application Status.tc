@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Verify Job Application Status</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>87116149-7caf-4f57-82ca-b389f361f49a</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>a7be40a0-f682-4dd0-8674-39ad45617460</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>a7be40a0-f682-4dd0-8674-39ad45617460</id>
+      <masked>false</masked>
+      <name>ApplicationStatus</name>
+   </variable>
+</TestCaseEntity>

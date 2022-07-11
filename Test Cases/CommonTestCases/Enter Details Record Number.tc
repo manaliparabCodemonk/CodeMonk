@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Enter Details Record Number</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>b83aa4eb-ac90-464e-b75e-43b3a831a4e9</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>c776f86c-b525-4466-a130-e792c95af88b</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>63a96c9e-5466-4441-9b14-10c4061c749b</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>ef101d42-e1f5-4de0-9b17-b340ea23ec75</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>c776f86c-b525-4466-a130-e792c95af88b</id>
+      <masked>false</masked>
+      <name>recordNum</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>63a96c9e-5466-4441-9b14-10c4061c749b</id>
+      <masked>false</masked>
+      <name>pageName</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>ef101d42-e1f5-4de0-9b17-b340ea23ec75</id>
+      <masked>false</masked>
+      <name>workFlow</name>
+   </variable>
+</TestCaseEntity>

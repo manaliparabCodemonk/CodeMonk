@@ -22,8 +22,8 @@ import cucumber.api.CucumberOptions;
 import cucumber.api.junit.Cucumber;
 CucumberKW.runWithCucumberRunner(TestRunner.class)
 @RunWith(Cucumber.class)
-@CucumberOptions(features = "Include/features/CreateTalent.feature",
-	//"Include/features/ChangeEmailPasswordPayment.feature",
+@CucumberOptions(features="Include/features/AllocateTalent.feature",
+				tags="@Talent",
 				 glue = "",
 				 plugin = ["pretty", "junit:Reports/cucumber.xml", "html:Reports", "json:Reports/cucumber.json"])
 public class TestRunner {

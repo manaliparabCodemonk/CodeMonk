@@ -1,5 +1,6 @@
 package com.CommonFunctions
 import static com.kms.katalon.core.checkpoint.CheckpointFactory.findCheckpoint
+
 import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
 import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
@@ -40,6 +41,9 @@ import com.kms.katalon.core.webui.exception.WebElementNotFoundException
 
 import com.kms.katalon.core.testdata.reader.ExcelFactory as ExcelFactory
 import com.kms.katalon.core.testdata.ExcelData
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
 class Helper {
 	String[][] testData = null
 	int lstRow,lstCol
@@ -107,7 +111,16 @@ class Helper {
 		List<WebElement> selectedRows = mailList.findElements(By.xpath("./" + outerTagName + "/tr"))
 		return selectedRows
 	}
-
+	
+	@Keyword
+	def TodayDate(){
+		SimpleDateFormat formatter = new SimpleDateFormat("dd/MM/yyyy");
+		Date date = new Date();
+		System.out.println(formatter.format(date));
+		String temp=formatter.format(date)
+		return temp
+	}
+	
 	@Keyword
 	def generateRandomNumber(int length) {
 		String chars = '1234567890'
@@ -121,10 +134,40 @@ class Helper {
 		}
 		return name
 	}
+
 	@Keyword
-	def generateRandomEmail() {
+	def generateName(int length) {
+		String alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+		StringBuilder sb = new StringBuilder();
+		Random random = new Random();
+		for(int i = 0; i < length; i++) {
+
+			// generate random index number
+			int index = random.nextInt(alphabet.length());
+
+			// get character specified by index
+			// from the string
+			char randomChar = alphabet.charAt(index);
+
+			// append the character to string builder
+			sb.append(randomChar);
+		}
+		String randomString = sb.toString();
+		System.out.println(randomString)
+		return randomString
+	}
+
+
+	@Keyword
+	def generateRandomEmail(String workFlow) {
 		String name = ''
-		name = "AutoTest-non-disposable"+generateRandomNumber(4)+"@mailinator.com"
+		name = workFlow+"-non-disposable"+generateRandomNumber(4)+"@mailinator.com"
+		return name
+	}
+	@Keyword
+	def generateRandomName(String workFlow) {
+		String name = ''
+		name = generateName(8)
 		return name
 	}
 }

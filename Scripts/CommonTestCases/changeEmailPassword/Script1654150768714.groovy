@@ -38,16 +38,14 @@ import org.openqa.selenium.Keys as Keys
 //		xlFieldValue =GlobalVariable.EmailTalent 
 //	}
 //    
-//    WebUI.callTestCase(findTestCase('Test Cases/CommonTestCases/enterDetails'), [('xlWorkflow') : xlWorkflow, ('xlPageName') : xlPageName
+//    WebUI.callTestCase(findTestCase('Test Cases/CommonTestCases/Enter Details'), [('xlWorkflow') : xlWorkflow, ('xlPageName') : xlPageName
 //            , ('xlFieldType') : xlFieldType, ('xlFieldLabel') : xlFieldLabel, ('xlFieldValue') : xlFieldValue], FailureHandling.STOP_ON_FAILURE)
 //}
 
-WebUI.callTestCase(findTestCase('Test Cases/CommonTestCases/enterDetailsCommon'), FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Test Cases/CommonTestCases/Enter Details Common'),['testData' : GlobalVariable.testData], FailureHandling.STOP_ON_FAILURE)
 	
-//Click on Send Code
-//WebUI.click(findTestObject('Profile/Account settings/Send Code'))
 //Retrieve Code
-code = WebUI.callTestCase(findTestCase('CommonTestCases/getEmailChangeVerificationCode'), [('email') : GlobalVariable.EmailTalent], 
+code = WebUI.callTestCase(findTestCase('CommonTestCases/Get Email Change Verification Code'), [('email') : GlobalVariable.EmailTalent], 
     FailureHandling.STOP_ON_FAILURE)
 
 System.out.println(code)

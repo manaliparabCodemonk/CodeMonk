@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Job Application Moves To</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>d26f8430-d376-4b38-abea-3d1c92b4e4eb</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>9f6a00fe-ddf6-4b67-93fb-3be9960ea490</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>9f6a00fe-ddf6-4b67-93fb-3be9960ea490</id>
+      <masked>false</masked>
+      <name>ToAction</name>
+   </variable>
+</TestCaseEntity>

@@ -52,37 +52,42 @@ class CreateTalent {
 	String[][] testData;
 	@Given("user launches {string} website")
 	public void user_launches_website(String environment) {
-		WebUI.callTestCase(findTestCase("Test Cases/CommonTestCases/launchBrowser"),[:],FailureHandling.STOP_ON_FAILURE)
+		WebUI.callTestCase(findTestCase("Test Cases/CommonTestCases/Launch Login URL"),['environment':environment],FailureHandling.STOP_ON_FAILURE)
 	}
 
-	@When("user enters username and password")
-	public void user_enters_username_and_password() {
-		WebUI.callTestCase(findTestCase("Test Cases/TalentTestCases/TalentLogin"),[:],FailureHandling.STOP_ON_FAILURE)
+	@When("user creates email and password for {string}")
+	public void user_creates_email_and_password_for(String workFlow) {
+		WebUI.callTestCase(findTestCase("Test Cases/TalentTestCases/Sign Up"),['workFlow':workFlow],FailureHandling.STOP_ON_FAILURE)
 	}
 
-	@Given("user creates email and password")
-	public void user_creates_email_and_password() {
-		WebUI.callTestCase(findTestCase("Test Cases/TalentTestCases/TalentSignUp"),[:],FailureHandling.STOP_ON_FAILURE)
+	@When("user enters username and password for {string}")
+	public void user_enters_username_and_password_for(String WorkFlow) {
+		WebUI.callTestCase(findTestCase("Test Cases/TalentTestCases/Login"),['WorkFlow': WorkFlow],FailureHandling.STOP_ON_FAILURE)
 	}
+
+	//	@Given("user creates email and password")
+	//	public void user_creates_email_and_password() {
+	//		WebUI.callTestCase(findTestCase("Test Cases/TalentTestCases/Sign Up"),[:],FailureHandling.STOP_ON_FAILURE)
+	//	}
 
 	@When("user read the test data sheet {string} from file {string}")
 	public void user_read_the_test_data_sheet_from_file(String sheetName, String fileName) {
-		GlobalVariable.testData = WebUI.callTestCase(findTestCase("Test Cases/CommonTestCases/readTestData"),['sheetName':sheetName,'fileName':fileName],FailureHandling.STOP_ON_FAILURE)
+		GlobalVariable.testData = WebUI.callTestCase(findTestCase("Test Cases/CommonTestCases/Read Test Data"),['sheetName':sheetName,'fileName':fileName],FailureHandling.STOP_ON_FAILURE)
 	}
 
 	@Then("verify user is on {string} page")
 	public void verify_user_is_on_page(String link) {
-		WebUI.callTestCase(findTestCase("Test Cases/CommonTestCases/verifyLink"),['link' : link],FailureHandling.STOP_ON_FAILURE)
+		WebUI.callTestCase(findTestCase("Test Cases/CommonTestCases/Verify Link"),['link' : link],FailureHandling.STOP_ON_FAILURE)
 	}
 
 	@When("user enter details on {string} on {string} page")
 	public void user_enter_details_on_on_Talent_page(String pageName,String workFlow) {
-		WebUI.callTestCase(findTestCase("Test Cases/TalentTestCases/EnterDetailsForms"),['testData' : GlobalVariable.testData,'pageName' : pageName,'workFlow' : workFlow],FailureHandling.STOP_ON_FAILURE)
+		WebUI.callTestCase(findTestCase("Test Cases/TalentTestCases/Enter Details Forms"),['testData' : GlobalVariable.testData,'pageName' : pageName,'workFlow' : workFlow],FailureHandling.STOP_ON_FAILURE)
 	}
 
 	@When("clicks on {string} button and verify {string} is completed")
 	public void clicks_on_button_and_verify_is_completed(String buttonName,String pageName) {
-		WebUI.callTestCase(findTestCase("Test Cases/CommonTestCases/clickButtonAndVerifyGreenTickMark"),['buttonName' : buttonName ,'pageName' :pageName],FailureHandling.STOP_ON_FAILURE)
+		WebUI.callTestCase(findTestCase("Test Cases/CommonTestCases/Verify Green Tick Mark And Progress"),['buttonName' : buttonName ,'pageName' :pageName],FailureHandling.STOP_ON_FAILURE)
 	}
 
 	@When("clicks on {string} button")
@@ -93,6 +98,6 @@ class CreateTalent {
 
 	@Then("user logs out from application")
 	public void user_logs_out_from_application() {
-		WebUI.callTestCase(findTestCase("Test Cases/CommonTestCases/logoutTalent"),[:],FailureHandling.STOP_ON_FAILURE)
+		WebUI.callTestCase(findTestCase("Test Cases/CommonTestCases/Logout Profile"),[:],FailureHandling.STOP_ON_FAILURE)
 	}
 }

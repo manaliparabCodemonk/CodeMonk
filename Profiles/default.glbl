@@ -11,22 +11,67 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'AutoTest-non-disposable6475@mailinator.com'</initValue>
-      <name>EmailTalent</name>
-   </GlobalVariableEntity>
-   <GlobalVariableEntity>
-      <description></description>
       <initValue>'codemonk.ai/talent/about-you'</initValue>
       <name>TalentLoginLink</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'AutoTest@123'</initValue>
-      <name>Password</name>
+      <initValue>findTestData('CodemonkTestdata (1)')</initValue>
+      <name>testData</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>findTestData('CodemonkTestdata (1)')</initValue>
-      <name>testData</name>
+      <initValue>'Client-non-disposable1345@mailinator.com'</initValue>
+      <name>EmailClient</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'Talent-non-disposable9941@mailinator.com'</initValue>
+      <name>EmailTalent</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'AutoTest@123'</initValue>
+      <name>PasswordTalent</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'AutoTest@123'</initValue>
+      <name>PasswordClient</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'FBFKUOVB'</initValue>
+      <name>TalentFirstName</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'RPQXLAQY'</initValue>
+      <name>TalentLastName</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>''</initValue>
+      <name>ClientFirstName</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>''</initValue>
+      <name>ClientLastName</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'super@codemonk.ai'</initValue>
+      <name>EmailAdmin</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'9Fy5^OFVIGv0^Nsj'</initValue>
+      <name>PasswordAdmin</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'https://staging.codemonk.ai/login'</initValue>
+      <name>LoginUrl</name>
    </GlobalVariableEntity>
 </GlobalVariableEntities>

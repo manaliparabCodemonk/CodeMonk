@@ -64,104 +64,99 @@ class ReferandEarn {
 	@When("user clicks on {string} menu")
 	public void user_clicks_on_menu(String menuItem) {
 		xpath="//a[contains(@title,'"+menuItem+"')]";
-		WebUI.callTestCase(findTestCase('Test Cases/CommonTestCases/clickDynamicObject'), [('xpath') : xpath], FailureHandling.STOP_ON_FAILURE)
+		WebUI.callTestCase(findTestCase('Test Cases/CommonTestCases/Click Dynamic Object'), [('xpath') : xpath], FailureHandling.STOP_ON_FAILURE)
 	}
-	
+
 	@When("user verifies Invite link copied and stores the list of Recommended jobs")
 	public void user_verifies_Invite_link_copied_and_stores_the_list_of_Recommended_jobs() {
-		
-		String url  = WebUI.getAttribute(findTestObject('Dashboard/Refer and Earn/Invite link'), 'value')		
-		String currentPage = WebUI.getUrl()	
-		int currentTab = WebUI.getWindowIndex()	
-		WebUI.executeJavaScript('window.open();', [])	
-		WebUI.switchToWindowIndex(currentTab + 1)		
+
+		String url  = WebUI.getAttribute(findTestObject('Dashboard/Refer and Earn/Invite link'), 'value')
+		String currentPage = WebUI.getUrl()
+		int currentTab = WebUI.getWindowIndex()
+		WebUI.executeJavaScript('window.open();', [])
+		WebUI.switchToWindowIndex(currentTab + 1)
 		WebUI.navigateToUrl(url)
-		WebUI.waitForPageLoad(5)	
-		
+		WebUI.waitForPageLoad(5)
+
 		xpath="//div[contains(@class,'flex-column')]//p";
 		jobDetails_Expected =WebUI.callTestCase(findTestCase('Test Cases/CommonTestCases/readReferAndEarnTable'), [('xpath') : xpath], FailureHandling.STOP_ON_FAILURE)
-		
-		WebUI.closeWindowIndex(currentTab + 1)	 
+
+		WebUI.closeWindowIndex(currentTab + 1)
 		WebUI.switchToWindowIndex(currentTab)
 	}
 
 	@When("user verifies {string} table")
 	public void user_verifies_table(String tableName) {
-		
+
 		WebUI.verifyElementVisible(findTestObject('Dashboard/Refer and Earn/'+tableName), FailureHandling.STOP_ON_FAILURE)
-	
 	}
-	
+
 	@When("user clicks on {string} button")
 	public void user_clicks_on_button(String buttonName) {
 		xpath="//span[text()='"+buttonName+"']"
-		WebUI.callTestCase(findTestCase('Test Cases/CommonTestCases/clickDynamicObject'), [('xpath') : xpath], FailureHandling.STOP_ON_FAILURE)	
-		
+		WebUI.callTestCase(findTestCase('Test Cases/CommonTestCases/Click Dynamic Object'), [('xpath') : xpath], FailureHandling.STOP_ON_FAILURE)
+
 		//Verify text Invite link sent successfully.
-		WebUI.verifyElementText(findTestObject('Dashboard/Refer and Earn/VerifyInviteLinkSentMessage'), 'Invite link sent successfully.')	
+		WebUI.verifyElementText(findTestObject('Dashboard/Refer and Earn/VerifyInviteLinkSentMessage'), 'Invite link sent successfully.')
 	}
-	
-	
+
+
 	@When("user enter details on {string} page for {string}")
 	public void user_enter_details_on_page_for(String pageName, String workFlow) {
-	
-		WebUI.callTestCase(findTestCase('Test Cases/CommonTestCases/enterDetailsCommon'),['testData' : GlobalVariable.testData,'pageName' : pageName,'workFlow' : workFlow], FailureHandling.STOP_ON_FAILURE)
+
+		WebUI.callTestCase(findTestCase('Test Cases/CommonTestCases/Enter Details Common'),['testData' : GlobalVariable.testData,'pageName' : pageName,'workFlow' : workFlow], FailureHandling.STOP_ON_FAILURE)
 	}
-	
+
 	@When("user verifies email received or not")
 	public void user_verifies_email_received_or_not() {
-		
+
 		String currentPage = WebUI.getUrl()
-		
+
 		int currentTab = WebUI.getWindowIndex()
-		
+
 		WebUI.executeJavaScript('window.open();', [])
-		
+
 		WebUI.switchToWindowIndex(currentTab + 1)
-		
+
 		WebUI.navigateToUrl('https://www.mailinator.com/v4/public/inboxes.jsp')
-		
+
 		WebUI.sendKeys(findTestObject('PageMailinator/txtboxPublicMessages'), GlobalVariable.EmailTalent)
-		
+
 		WebUI.click(findTestObject('PageMailinator/btnGO'))
-		
+
 		WebUI.click(findTestObject('PageMailinator/labelFutureofworkcodemonk'))
-		
+
 		WebUI.switchToFrame(findTestObject('PageMailinator/frameEmailBody'), 5)
-			
 	}
-	
+
 	@When("user launches new tab for Recommended jobs")
 	public void user_launches_new_tab_for_Recommended_jobs() {
 		String currentPage2 = WebUI.getUrl()
-		
+
 		int currentTab2 = WebUI.getWindowIndex()
-		
+
 		WebUI.click(findTestObject('PageMailinator/OK,Sign Me Up'))
 
 		WebUI.switchToWindowIndex(currentTab2 + 1)
-		
+
 		xpath="//div[contains(@class,'flex-column')]//p";
-	jobDetails_Actual =WebUI.callTestCase(findTestCase('Test Cases/CommonTestCases/readReferAndEarnTable'), [('xpath') : xpath], FailureHandling.STOP_ON_FAILURE)
-		
-	
+		jobDetails_Actual =WebUI.callTestCase(findTestCase('Test Cases/CommonTestCases/readReferAndEarnTable'), [('xpath') : xpath], FailureHandling.STOP_ON_FAILURE)
 	}
-	
+
 	@Then("verifies list of Recommended jobs")
-	public void verifies_list_of_Recommended_jobs() {	
+	public void verifies_list_of_Recommended_jobs() {
 		boolean flag=false;
-	
+
 		if(jobDetails_Expected.length==jobDetails_Actual.length && jobDetails_Expected.toString().contentEquals(jobDetails_Actual.toString())){
 			flag=true;
 		}
 
 		WebUI.closeWindowIndex(currentTab2 + 1)
-		
+
 		WebUI.switchToWindowIndex(currentTab2)
-		
+
 		WebUI.closeWindowIndex(currentTab2)
-		
-		WebUI.switchToWindowIndex(currentTab)		
-	}	
-	
+
+		WebUI.switchToWindowIndex(currentTab)
+	}
 }

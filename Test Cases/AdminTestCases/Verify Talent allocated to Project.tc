@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Verify Talent allocated to Project</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>23704b1f-8681-4339-8c24-baf156e56011</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>3aa472a6-1882-4279-bcdb-9a614e2a60c4</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>3aa472a6-1882-4279-bcdb-9a614e2a60c4</id>
+      <masked>false</masked>
+      <name>ProjectName</name>
+   </variable>
+</TestCaseEntity>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Verify Email Received Applied Jobs</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>3aa62588-4047-4b93-9e74-2131cc9b9c08</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>d76a5454-f44e-4140-9ef5-1b7255a71b8a</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>d76a5454-f44e-4140-9ef5-1b7255a71b8a</id>
+      <masked>false</masked>
+      <name>WorkFlow</name>
+   </variable>
+</TestCaseEntity>
