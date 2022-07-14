@@ -58,7 +58,7 @@ switch (xlFieldType) {
     case 'Textbox with Enter':
         WebUI.sendKeys(findTestObject((((xlWorkflow + '/') + xlPageName) + '/') + xlFieldLabel), xlFieldValue)
 
-        WebUI.delay(2)
+        WebUI.delay(5)
 
         WebUI.sendKeys(findTestObject((((xlWorkflow + '/') + xlPageName) + '/') + xlFieldValue), Keys.chord(Keys.ENTER))
 
@@ -135,7 +135,7 @@ switch (xlFieldType) {
 
         break
     case 'SelectElementFromList':
-        xpath = (('//div[text()=\'' + xlFieldLabel) + '\']')
+        xpath = "//div[text()='" + xlFieldLabel + "']"
 
         WebUI.callTestCase(findTestCase('Test Cases/CommonTestCases/Click Dynamic Object'), [('xpath') : xpath], FailureHandling.STOP_ON_FAILURE)
 

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Verify Timesheet By Admin</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>cbd1c2ee-d3ff-4762-bd69-a5c25d7aaf76</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>eef5fba8-32e9-477c-9870-e32583ba200a</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>eef5fba8-32e9-477c-9870-e32583ba200a</id>
+      <masked>false</masked>
+      <name>recordNum</name>
+   </variable>
+</TestCaseEntity>

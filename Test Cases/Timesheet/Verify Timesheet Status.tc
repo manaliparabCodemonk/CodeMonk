@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Verify Timesheet Status</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>786ae635-80d8-4e8a-a1ac-a155e210b15a</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>c102a725-bb1e-4abe-b776-1f32f7a28adb</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>c102a725-bb1e-4abe-b776-1f32f7a28adb</id>
+      <masked>false</masked>
+      <name>ExpectedStatus</name>
+   </variable>
+</TestCaseEntity>

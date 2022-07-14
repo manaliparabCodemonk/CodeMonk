@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>I confirm</name>
+   <name>Thursday</name>
    <tag></tag>
-   <elementGuidId>d015d9eb-71d1-46db-a536-0f11bdb97d22</elementGuidId>
+   <elementGuidId>1d689d1c-2c2d-42de-a300-05045a2bd2ef</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
@@ -11,13 +11,13 @@
       </entry>
       <entry>
          <key>CSS</key>
-         <value>label.checkbox-label.small</value>
+         <value>input[name='Thursday']//input[@name='Monday']/following-sibling::input[@name='hour24']</value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value></value>
+         <value>//input[@name='Thursday']/following-sibling::input[@name='hour24']</value>
       </entry>
    </selectorCollection>
-   <selectorMethod>CSS</selectorMethod>
+   <selectorMethod>XPATH</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
 </WebElementEntity>

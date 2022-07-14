@@ -16,15 +16,18 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
-import org.junit.runner.RunWith;
-import cucumber.api.CucumberOptions;
-import cucumber.api.junit.Cucumber;
-CucumberKW.runWithCucumberRunner(TestRunner.class)
-@RunWith(Cucumber.class)
-@CucumberOptions(features= ["Include/features/AllocateTalent.feature","Include/features/Timesheet.feature"],
-				tags="@Talent",
-				 glue = "",
-				 plugin = ["pretty", "junit:Reports/cucumber.xml", "html:Reports", "json:Reports/cucumber.json"])
-public class TestRunner {
+
+xpath ="//*[text()='"+ExpectedStatus+"']"
+ String ActualStatus= WebUI.callTestCase(findTestCase('Test Cases/CommonTestCases/Verify Text On Dynamic Object'), [('xpath') : xpath], FailureHandling.STOP_ON_FAILURE)
+ 
+ if(ActualStatus.equals(ExpectedStatus))
+ {
+	 System.out.println("Verified Timesheet status as "+ ActualStatus)
+	 WebUI.comment("Verified Timesheet status as "+ ActualStatus)
 	
-}
+ }
+ else
+ {	System.out.println("Unable to verify Timesheet status as "+ ExpectedStatus)
+	 WebUI.comment("Unable to verify Timesheet status as "+ ExpectedStatus)
+	
+ }

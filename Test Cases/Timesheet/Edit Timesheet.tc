@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Edit Timesheet</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>932abf99-5a28-45cd-b0e5-6f42c1192175</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>3216a700-8e9d-4242-8f9e-5c375cd37c25</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>3216a700-8e9d-4242-8f9e-5c375cd37c25</id>
+      <masked>false</masked>
+      <name>RecordNum</name>
+   </variable>
+</TestCaseEntity>

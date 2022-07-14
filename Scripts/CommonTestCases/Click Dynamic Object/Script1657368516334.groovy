@@ -23,7 +23,7 @@ try {
 
     object.addProperty('xpath', ConditionType.EQUALS, xpath)
 
-    WebUI.click(object)
+	 WebUI.click(object)
 
     return true
 }

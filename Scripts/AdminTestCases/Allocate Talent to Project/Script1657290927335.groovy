@@ -43,7 +43,6 @@ for (int i = 1; i < GlobalVariable.testData.length; i++) {
 		
 	String xlPageName = (GlobalVariable.testData[i])[2]
 	
-	System.out.println(xlPageName)
 		if(xlPageName.equals("Allocate Talent")){
 		   
 		String xlWorkflow = (GlobalVariable.testData[i])[1]

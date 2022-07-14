@@ -46,11 +46,10 @@ class ChangeEmailPassword {
 
 	@When("user selects {string}")
 	public void user_selects(String option) {
-		//Click on Dashbaord
-
 		//Click on menu item
 		xpath="//span[text()='"+option+"']"
 		WebUI.callTestCase(findTestCase('Test Cases/CommonTestCases/Click Dynamic Object'), [('xpath') : xpath], FailureHandling.STOP_ON_FAILURE)
+		WebUI.comment("User selects "+ option)
 	}
 
 	@When("user updates {string} and {string}")

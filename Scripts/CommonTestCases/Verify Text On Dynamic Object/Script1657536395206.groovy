@@ -16,15 +16,19 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
-import org.junit.runner.RunWith;
-import cucumber.api.CucumberOptions;
-import cucumber.api.junit.Cucumber;
-CucumberKW.runWithCucumberRunner(TestRunner.class)
-@RunWith(Cucumber.class)
-@CucumberOptions(features= ["Include/features/AllocateTalent.feature","Include/features/Timesheet.feature"],
-				tags="@Talent",
-				 glue = "",
-				 plugin = ["pretty", "junit:Reports/cucumber.xml", "html:Reports", "json:Reports/cucumber.json"])
-public class TestRunner {
+import com.kms.katalon.core.testobject.ConditionType as ConditionType
+String textOnObject
+try {
+    TestObject object = new TestObject('Object')
+
+    object.addProperty('xpath', ConditionType.EQUALS, xpath)
+
+	textOnObject= WebUI.getText(object)
 	
+    return textOnObject
 }
+catch (Exception e) {
+    return null
+ 
+} 
+

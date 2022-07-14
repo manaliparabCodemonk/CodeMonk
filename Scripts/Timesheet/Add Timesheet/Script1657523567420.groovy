@@ -16,15 +16,26 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
-import org.junit.runner.RunWith;
-import cucumber.api.CucumberOptions;
-import cucumber.api.junit.Cucumber;
-CucumberKW.runWithCucumberRunner(TestRunner.class)
-@RunWith(Cucumber.class)
-@CucumberOptions(features= ["Include/features/AllocateTalent.feature","Include/features/Timesheet.feature"],
-				tags="@Talent",
-				 glue = "",
-				 plugin = ["pretty", "junit:Reports/cucumber.xml", "html:Reports", "json:Reports/cucumber.json"])
-public class TestRunner {
+
+for (int i = 1; i < GlobalVariable.testData.length; i++) {
+		
+	String xlPageName = (GlobalVariable.testData[i])[2]
 	
+	String xlRecordNum = (GlobalVariable.testData[i])[6]
+	
+	if(xlPageName.equals("Add timesheet") && xlRecordNum.equals(RecordNum)){
+		   
+		String xlWorkflow = (GlobalVariable.testData[i])[1]
+	
+		String xlFieldType = (GlobalVariable.testData[i])[3]
+	
+		String xlFieldLabel = (GlobalVariable.testData[i])[4]
+	
+		String xlFieldValue = (GlobalVariable.testData[i])[5]
+		
+		WebUI.callTestCase(findTestCase('Test Cases/CommonTestCases/Enter Details'), [('xlWorkflow') : xlWorkflow, ('xlPageName') : xlPageName
+			, ('xlFieldType') : xlFieldType, ('xlFieldLabel') : xlFieldLabel, ('xlFieldValue') : xlFieldValue], FailureHandling.STOP_ON_FAILURE)
+
+		 }
 }
+WebUI.comment("Added Timesheet for Talent "+ GlobalVariable.EmailTalent)

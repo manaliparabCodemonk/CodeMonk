@@ -1,19 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Monday</name>
+   <name>Save to draft</name>
    <tag></tag>
-   <elementGuidId>412f1363-2c0f-4e95-9e76-365f747eeeb0</elementGuidId>
+   <elementGuidId>2ae4f17f-ac14-452c-b646-53444edb1d2e</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value></value>
       </entry>
       <entry>
          <key>CSS</key>
-         <value>input[name='Monday']</value>
+         <value>button[type='Submit']</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//span[text()='Save to draft']</value>
       </entry>
    </selectorCollection>
-   <selectorMethod>CSS</selectorMethod>
+   <selectorMethod>XPATH</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
 </WebElementEntity>

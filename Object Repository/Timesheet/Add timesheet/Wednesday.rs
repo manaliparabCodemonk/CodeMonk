@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>Wednesday</name>
+   <tag></tag>
+   <elementGuidId>cabb6230-fe57-44e8-972d-a265af74d398</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value></value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>input[name='']</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//input[@name='Wednesday']/following-sibling::input[@name='hour24']</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+</WebElementEntity>

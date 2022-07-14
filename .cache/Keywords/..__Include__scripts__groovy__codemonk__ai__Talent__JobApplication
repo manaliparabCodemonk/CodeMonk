@@ -1,10 +1,10 @@
 {
-  "keywordFileContentHash": "4D8B47DC2996A9CE3669D8CFECBDF4F6",
+  "keywordFileContentHash": "9C87BCE4289DD2CC32A6E9E49D0DA337",
   "keywordClasses": [
     {
       "name": "codemonk.ai.Talent.JobApplication",
       "keywordMethods": []
     }
   ],
-  "javadocParsed": true
+  "javadocParsed": false
 }

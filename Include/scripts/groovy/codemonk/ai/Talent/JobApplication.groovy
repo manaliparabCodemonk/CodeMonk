@@ -46,7 +46,16 @@ import cucumber.api.java.en.When
 
 class JobApplication {
 	String xpath
-
+	
+	@When("user clicks on Open Live Jobs")
+	public void user_clicks_on_Open_Live_Jobs() {
+		WebUI.delay(2)
+		
+		//Clicks on Open Live Jobs
+		WebUI.click(findTestObject("Job Application/Job Application/Open Live Jobs"))
+		
+	
+	}
 	@When("searches for {string}")
 	public void searches_for(String searchCriteria) {
 		//Click on Job Search
@@ -54,17 +63,25 @@ class JobApplication {
 
 		WebUI.sendKeys(findTestObject('Job Application/Job Search'), searchCriteria)
 
-		WebUI.delay(2)
+		WebUI.delay(3)
+
+		WebUI.comment("Talent searches for "+ searchCriteria)
+
 	}
 
 	@When("user selects first result")
 	public void user_selects_first_result() {
 		xpath="//div[contains(@class,'JobCardBlock')][1]"
 		WebUI.callTestCase(findTestCase('Test Cases/CommonTestCases/Click Dynamic Object'), [('xpath') : xpath], FailureHandling.STOP_ON_FAILURE)
+
+		WebUI.delay(2)
+
+		WebUI.comment("Talent selects first result")
 	}
 
 	@When("enters other details in Your application")
 	public void enters_other_details_in_Your_application() {
+
 		WebUI.callTestCase(findTestCase('Test Cases/CommonTestCases/Enter Details Common'),['testData' : GlobalVariable.testData], FailureHandling.STOP_ON_FAILURE)
 	}
 

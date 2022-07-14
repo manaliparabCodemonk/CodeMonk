@@ -16,15 +16,34 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
-import org.junit.runner.RunWith;
-import cucumber.api.CucumberOptions;
-import cucumber.api.junit.Cucumber;
-CucumberKW.runWithCucumberRunner(TestRunner.class)
-@RunWith(Cucumber.class)
-@CucumberOptions(features= ["Include/features/AllocateTalent.feature","Include/features/Timesheet.feature"],
-				tags="@Talent",
-				 glue = "",
-				 plugin = ["pretty", "junit:Reports/cucumber.xml", "html:Reports", "json:Reports/cucumber.json"])
-public class TestRunner {
+
+
+for (int i = 1; i < GlobalVariable.testData.length; i++) {
+	String xlRecordNum = (GlobalVariable.testData[i])[6]
+		
+	String xlPageName = (GlobalVariable.testData[i])[2]
+
+		if(xlRecordNum.equals(recordNum) && xlPageName.equals("Verify timesheet")){
+		   
+		String xlWorkflow = (GlobalVariable.testData[i])[1]
 	
+		String xlFieldType = (GlobalVariable.testData[i])[3]
+	
+		String xlFieldLabel = (GlobalVariable.testData[i])[4]
+	
+		String xlFieldValue = (GlobalVariable.testData[i])[5]
+		
+		xpath ="//div[text()='"+xlFieldLabel+"']/following::div[text()='"+xlFieldValue+"']"
+		String ActualText= WebUI.callTestCase(findTestCase('Test Cases/CommonTestCases/Verify Text On Dynamic Object'), [('xpath') : xpath], FailureHandling.STOP_ON_FAILURE)
+		
+		if(ActualText.equals(xlFieldValue))
+		{
+			System.out.println("Verified Timesheet value for " +  xlFieldLabel +" as "+ ActualText)
+			WebUI.comment("Verified Timesheet value for " +  xlFieldLabel +" as "+ ActualText)
+		}
+		else
+		{	System.out.println("Unable to verify Timesheet status as "+ xlFieldValue)
+			WebUI.comment("Unable to verify Timesheet status as "+ xlFieldValue)
+		}
+		}
 }

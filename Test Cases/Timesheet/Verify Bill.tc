@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Verify Bill</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>fb3d94e2-ee72-47fd-ab2a-2161d97a5247</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>c1579e70-d267-4f0b-a8ed-44c85f39b70f</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>c1579e70-d267-4f0b-a8ed-44c85f39b70f</id>
+      <masked>false</masked>
+      <name>workFlow</name>
+   </variable>
+</TestCaseEntity>

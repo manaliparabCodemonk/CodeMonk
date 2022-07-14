@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Estimated earnings</name>
+   <name>Add timesheet</name>
    <tag></tag>
-   <elementGuidId>bba7f27b-b78b-4dc8-b365-1fb23ace89cf</elementGuidId>
+   <elementGuidId>8eb1fb3d-ada7-4357-aad7-df09bf3370de</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//p[contains(@class,'TimeText')][text()='Estimated earning :']</value>
+         <value>//span[text()='Add timesheet']</value>
       </entry>
       <entry>
          <key>BASIC</key>

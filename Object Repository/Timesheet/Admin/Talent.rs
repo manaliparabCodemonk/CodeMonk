@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Total</name>
+   <name>Talent</name>
    <tag></tag>
-   <elementGuidId>018734ca-218b-488d-b756-fc2d25c4d52c</elementGuidId>
+   <elementGuidId>6267f4ab-0cfd-45c3-8935-47c16a27c6ea</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//p[contains(@class,'TimeText')][text()='Total: ']</value>
+         <value>//label[text()='Talent']/parent::div//input</value>
       </entry>
       <entry>
          <key>BASIC</key>

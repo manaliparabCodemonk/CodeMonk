@@ -54,7 +54,7 @@ Feature: Allocate A Talent
      
     Then verify user is on "Client Dashboard" page
     
-    ##################################Client creates Job Briefs and Projects #########################################################
+    ##############################Client creates Job Briefs and Projects #########################################################
     When user read the test data sheet "Projects Briefs" from file "CodemonkTestdata.xls"
 	  ##
 	  When user selects "New project"
@@ -65,7 +65,7 @@ Feature: Allocate A Talent
  		And user enter details on "Create brief" on "Project" for "1" time
  		Then verify brief is added for "1" time
  		And user logs out from application 	
- 		
+ 		And closes browser
  		########################################################################################################
   	Scenario: Talent logins and applies for Job Applications
  		
@@ -73,6 +73,7 @@ Feature: Allocate A Talent
     When user enters username and password for "Talent"
     When user read the test data sheet "JobApplications" from file "CodemonkTestdata.xls"
  	  And user clicks on "Jobs" menu
+ 	  And user clicks on Open Live Jobs
    	And searches for "Automation Test Analyst" 
   	And user selects first result
   	And user selects "Apply"

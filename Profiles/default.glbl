@@ -21,12 +21,12 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'Client-non-disposable1345@mailinator.com'</initValue>
+      <initValue>''</initValue>
       <name>EmailClient</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'Talent-non-disposable9941@mailinator.com'</initValue>
+      <initValue>'Talent-non-disposable1445@mailinator.com'</initValue>
       <name>EmailTalent</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
@@ -41,12 +41,12 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'FBFKUOVB'</initValue>
+      <initValue>''</initValue>
       <name>TalentFirstName</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'RPQXLAQY'</initValue>
+      <initValue>''</initValue>
       <name>TalentLastName</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
@@ -73,5 +73,10 @@
       <description></description>
       <initValue>'https://staging.codemonk.ai/login'</initValue>
       <name>LoginUrl</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>''</initValue>
+      <name>UniquePath</name>
    </GlobalVariableEntity>
 </GlobalVariableEntities>

@@ -16,15 +16,23 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
-import org.junit.runner.RunWith;
-import cucumber.api.CucumberOptions;
-import cucumber.api.junit.Cucumber;
-CucumberKW.runWithCucumberRunner(TestRunner.class)
-@RunWith(Cucumber.class)
-@CucumberOptions(features= ["Include/features/AllocateTalent.feature","Include/features/Timesheet.feature"],
-				tags="@Talent",
-				 glue = "",
-				 plugin = ["pretty", "junit:Reports/cucumber.xml", "html:Reports", "json:Reports/cucumber.json"])
-public class TestRunner {
-	
-}
+String xpath,ActualText
+
+WebUI.sendKeys(findTestObject('Timesheet/Admin/Talent'),GlobalVariable.TalentFirstName+" "+GlobalVariable.TalentLastName + " ")
+WebUI.delay(2)
+WebUI.sendKeys(findTestObject('Timesheet/Admin/Talent'),Keys.chord(Keys.ENTER))
+
+xpath= GlobalVariable.UniquePath+"//div[text()='"+fromStatus+"']"
+WebUI.callTestCase(findTestCase('Test Cases/CommonTestCases/Click Dynamic Object'), [('xpath') : xpath], FailureHandling.STOP_ON_FAILURE)
+
+//Select InReview
+ xpath="//div[text()='"+toStatus+"']"
+ WebUI.callTestCase(findTestCase('Test Cases/CommonTestCases/Click Dynamic Object'), [('xpath') :xpath], FailureHandling.STOP_ON_FAILURE)
+ 
+ if(toStatus.equals("Reject"))
+ {
+	WebUI.sendKeys(findTestObject('Timesheet/Reject Comments'), "Not upto mark. Hence rejected it") 
+	WebUI.click(findTestObject('Timesheet/Add timesheet/Submit'))
+ }
+ 
+ WebUI.clearText(findTestObject('Timesheet/Admin/Talent'))

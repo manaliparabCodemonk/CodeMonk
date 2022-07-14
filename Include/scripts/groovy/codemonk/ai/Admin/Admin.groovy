@@ -54,4 +54,5 @@ class Admin {
 	public void user_verifies_if_Talent_is_added_to(String ProjectName) {
 		WebUI.callTestCase(findTestCase('Test Cases/AdminTestCases/Verify Talent allocated to Project'),['testData' : GlobalVariable.testData,'ProjectName' : ProjectName], FailureHandling.STOP_ON_FAILURE)
 	}
+	
 }
