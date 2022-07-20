@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Send Username</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>06afc74a-6f3b-48d3-8843-2255bd89e36f</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>db2df693-025a-413d-be8c-75f56b3ade23</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>2d041e57-8c3c-48ac-8f90-af0ffc8b395f</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>9f7a8f47-ff1f-4b77-88f5-e8e3ea356bc7</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>db2df693-025a-413d-be8c-75f56b3ade23</id>
+      <masked>false</masked>
+      <name>workFlow</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>2d041e57-8c3c-48ac-8f90-af0ffc8b395f</id>
+      <masked>false</masked>
+      <name>Email</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>9f7a8f47-ff1f-4b77-88f5-e8e3ea356bc7</id>
+      <masked>false</masked>
+      <name>ResetPassword</name>
+   </variable>
+</TestCaseEntity>

@@ -73,8 +73,9 @@ class ChangeEmailPassword {
 		//Click on Skip to Dashboard
 		WebUI.click(findTestObject('Talent/Skip to Dashboard'))
 
+		//Following code is commented as text goes off quickly
 		//Verify text email is changed successfully
-		WebUI.verifyElementText(findTestObject('Dashboard/VerifyDataSaveMessage'), 'The data is saved successfully. You can continue with onboarding later.')
+		//WebUI.verifyElementText(findTestObject('Dashboard/VerifyDataSaveMessage'), 'The data is saved successfully. You can continue with onboarding later.')
 	}
 
 	@Then("verify Profile Details are updated")
@@ -83,10 +84,16 @@ class ChangeEmailPassword {
 		WebUI.verifyElementText(findTestObject('Profile/My Profile/Name'), 'Testfirstname T.')
 
 	}
-
+	
+	@Then("verify Profile Details are updated for {string}")
+	public void verify_Profile_Details_are_updated_for(String workFlow) {
+		WebUI.callTestCase(findTestCase('Test Cases/Recruiter/VerifyRecruiter'),['testData' : GlobalVariable.testData,'workFlow':workFlow], FailureHandling.STOP_ON_FAILURE)
+		
+	}
+	
 	@Then("closes browser")
 	public void closes_browser() {
-		//'Close browser'
-		WebUI.closeBrowser()
+		WebUI.callTestCase(findTestCase("Test Cases/CommonTestCases/CloseBrowser"),[:],FailureHandling.STOP_ON_FAILURE)
+		
 	}
 }

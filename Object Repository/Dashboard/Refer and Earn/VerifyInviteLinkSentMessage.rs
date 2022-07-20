@@ -10,7 +10,7 @@
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//span[text()='Invite link sent successfully.']</value>
+         <value>//span[text()='Invite link sent successfully']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

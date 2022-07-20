@@ -111,7 +111,7 @@ class Helper {
 		List<WebElement> selectedRows = mailList.findElements(By.xpath("./" + outerTagName + "/tr"))
 		return selectedRows
 	}
-	
+
 	@Keyword
 	def TodayDate(){
 		SimpleDateFormat formatter = new SimpleDateFormat("dd/MM/yyyy");
@@ -120,7 +120,7 @@ class Helper {
 		String temp=formatter.format(date)
 		return temp
 	}
-	
+
 	@Keyword
 	def generateRandomNumber(int length) {
 		String chars = '1234567890'

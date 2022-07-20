@@ -1,5 +1,4 @@
 import static com.kms.katalon.core.checkpoint.CheckpointFactory.findCheckpoint
-
 import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
 import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
@@ -20,16 +19,25 @@ import org.openqa.selenium.Keys as Keys
 
 WebUI.openBrowser('')
 
-WebUI.navigateToUrl(GlobalVariable.URL)
-
-WebUI.maximizeWindow()
-if(workflow.contains("Client"))
-{
-	//Select Employer	
-	WebUI.click(findTestObject('SignUp/btnEmployer'))
-	
+if (workflow.equals('Recruiter')) {
+   // GlobalVariable.URL = GlobalVariable.RecruiterURL
+	WebUI.navigateToUrl(GlobalVariable.RecruiterURL)
+} else if (workflow.equals('Ambassador')) {
+ //   GlobalVariable.URL = GlobalVariable.AmbassadorURL
+	WebUI.navigateToUrl(GlobalVariable.AmbassadorURL)
+} else {
+    WebUI.navigateToUrl(GlobalVariable.URL)
 }
 
-WebUI.comment("Launched Browser")
-return true 
+WebUI.maximizeWindow()
 
+if (workflow.contains('Client')) {
+    //Select Employer	
+    WebUI.click(findTestObject('SignUp/btnEmployer'))
+}
+
+WebUI.comment('********************************************************')
+
+WebUI.comment('Launched Browser')
+
+return true

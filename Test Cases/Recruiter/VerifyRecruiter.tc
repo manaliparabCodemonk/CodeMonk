@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>VerifyRecruiter</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>5498a866-1f1e-4762-beed-ad23a09c5343</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>86f61f71-bdfa-4927-9e89-57624fb96381</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>86f61f71-bdfa-4927-9e89-57624fb96381</id>
+      <masked>false</masked>
+      <name>workFlow</name>
+   </variable>
+</TestCaseEntity>

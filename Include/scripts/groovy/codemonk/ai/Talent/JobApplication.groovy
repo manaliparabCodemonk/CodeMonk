@@ -97,7 +97,7 @@ class JobApplication {
 
 	@Given("user Upgrades Plan")
 	public void user_Upgrades_Plan() {
-		WebUI.callTestCase(findTestCase('Test Cases/ClientHiresTalent/Client Upgarde Plan'),['testData' : GlobalVariable.testData], FailureHandling.STOP_ON_FAILURE)
+		WebUI.callTestCase(findTestCase('Test Cases/ClientHiresTalent/Client Upgrade Plan'),['testData' : GlobalVariable.testData], FailureHandling.STOP_ON_FAILURE)
 	}
 
 	@Then("also verify Talent profile in email")

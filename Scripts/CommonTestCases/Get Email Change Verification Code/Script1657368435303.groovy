@@ -30,16 +30,17 @@ WebUI.switchToWindowIndex(currentTab + 1)
 
 WebUI.navigateToUrl('https://www.mailinator.com/v4/public/inboxes.jsp')
 
+WebUI.delay(2)
 
-WebUI.sendKeys(findTestObject('PageMailinator/txtboxPublicMessages'), GlobalVariable.EmailTalent)
+WebUI.sendKeys(findTestObject('Mailinator/txtboxPublicMessages'), GlobalVariable.EmailTalent)
 
-WebUI.click(findTestObject('PageMailinator/btnGO'))
+WebUI.click(findTestObject('Mailinator/btnGO'))
 
-WebUI.click(findTestObject('PageMailinator/labelFutureofworkcodemonk'))
+WebUI.click(findTestObject('Mailinator/labelFutureofworkcodemonk'))
 
-WebUI.switchToFrame(findTestObject('PageMailinator/frameEmailBody'), 5)
+WebUI.switchToFrame(findTestObject('Mailinator/frameEmailBody'), 5)
 
-code = WebUI.getText(findTestObject('PageMailinator/labelCode'))
+code = WebUI.getText(findTestObject('Mailinator/labelCode'))
 
 WebUI.closeWindowIndex(currentTab + 1)
 

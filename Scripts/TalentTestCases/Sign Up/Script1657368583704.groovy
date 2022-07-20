@@ -26,7 +26,7 @@ String Password
 
 Email = CustomKeywords.'com.CommonFunctions.Helper.generateRandomEmail'(workFlow)
 
-WebUI.sendKeys(findTestObject('SignUp/txtboxEmail'),Email)
+WebUI.sendKeys(findTestObject('SignUp/Email'),Email)
 
 System.out.println(Email)
 
@@ -36,8 +36,13 @@ WebUI.sendKeys(findTestObject('SignUp/txtboxPassword'), Password)
 
 WebUI.click(findTestObject('SignUp/checkboxIAgree'))
 
-WebUI.click(findTestObject('SignUp/btn_Signup'))
-
+if(workFlow.equals('Recruiter') || workFlow.equals('Ambassador'))
+{	
+	WebUI.click(findTestObject('SignUp/Create my free account'))
+}
+else {
+	WebUI.click(findTestObject('SignUp/btn_Signup'))
+}
 WebUI.waitForElementPresent(findTestObject('SignUp/txtboxVerificationCode'), 10)
 
 code = WebUI.callTestCase(findTestCase('CommonTestCases/Get Verification Code'), [('Email') : Email], FailureHandling.STOP_ON_FAILURE)
@@ -61,11 +66,22 @@ if(workFlow.equals('Client'))
 	
 	WebUI.click(findTestObject('SignUp/Skip now'))
 	
-	WebUI.click(findTestObject('SignUp/Profile Edit'))
-	
-	WebUI.click(findTestObject('Profile/Profile Edit'))
 	WebUI.comment("New Sign Up for Talent "+GlobalVariable.EmailTalent)
 	
 }
-
+else if(workFlow.equals('Recruiter'))
+	{
+		GlobalVariable.EmailRecruiter=Email
+		GlobalVariable.PasswordRecruiter=Password
+		
+		WebUI.comment("New Sign Up for Recruiter "+GlobalVariable.EmailRecruiter)
+		
+	}
+else if(workFlow.equals('Ambassador'))
+	{
+		GlobalVariable.EmailAmbassador=Email
+		GlobalVariable.PasswordAmbassador=Password		
+		WebUI.comment("New Sign Up for Ambassador "+GlobalVariable.EmailAmbassador)
+			
+	}
 

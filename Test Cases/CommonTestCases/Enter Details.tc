@@ -5,4 +5,17 @@
    <tag></tag>
    <comment></comment>
    <testCaseGuid>c1d2eefc-18b7-468e-8e6d-c8831f10b4e2</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>1bf8897a-466c-497e-aa48-79272c666387</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>1bf8897a-466c-497e-aa48-79272c666387</id>
+      <masked>false</masked>
+      <name>xlWorkflow</name>
+   </variable>
 </TestCaseEntity>

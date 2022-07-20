@@ -90,6 +90,12 @@ class ReferandEarn {
 
 		WebUI.verifyElementVisible(findTestObject('Dashboard/Refer and Earn/'+tableName), FailureHandling.STOP_ON_FAILURE)
 	}
+	
+	@When("user selects {string} tab")
+	public void user_selects_tab(String TabName) {
+		xpath="//a[contains(@class,'CustomTab')]//span[text()='"+TabName+"']"
+		WebUI.callTestCase(findTestCase('Test Cases/CommonTestCases/Click Dynamic Object'), [('xpath') : xpath], FailureHandling.STOP_ON_FAILURE)
+	}
 
 	@When("user clicks on {string} button")
 	public void user_clicks_on_button(String buttonName) {
@@ -97,14 +103,14 @@ class ReferandEarn {
 		WebUI.callTestCase(findTestCase('Test Cases/CommonTestCases/Click Dynamic Object'), [('xpath') : xpath], FailureHandling.STOP_ON_FAILURE)
 
 		//Verify text Invite link sent successfully.
-		WebUI.verifyElementText(findTestObject('Dashboard/Refer and Earn/VerifyInviteLinkSentMessage'), 'Invite link sent successfully.')
+		WebUI.verifyElementText(findTestObject('Dashboard/Refer and Earn/VerifyInviteLinkSentMessage'), 'Invite link sent successfully')
 	}
 
 
 	@When("user enter details on {string} page for {string}")
-	public void user_enter_details_on_page_for(String pageName, String workFlow) {
+	public void user_enter_details_on_page_for(String pageName, String WorkFlow) {
 
-		WebUI.callTestCase(findTestCase('Test Cases/CommonTestCases/Enter Details Common'),['testData' : GlobalVariable.testData,'pageName' : pageName,'workFlow' : workFlow], FailureHandling.STOP_ON_FAILURE)
+		WebUI.callTestCase(findTestCase('Test Cases/CommonTestCases/Enter Details Common'),['testData' : GlobalVariable.testData,'pageName' : pageName,'WorkFlow' : WorkFlow], FailureHandling.STOP_ON_FAILURE)
 	}
 
 	@When("user verifies email received or not")
@@ -120,22 +126,59 @@ class ReferandEarn {
 
 		WebUI.navigateToUrl('https://www.mailinator.com/v4/public/inboxes.jsp')
 
-		WebUI.sendKeys(findTestObject('PageMailinator/txtboxPublicMessages'), GlobalVariable.EmailTalent)
+		WebUI.sendKeys(findTestObject('Mailinator/txtboxPublicMessages'), GlobalVariable.EmailTalent)
 
-		WebUI.click(findTestObject('PageMailinator/btnGO'))
+		WebUI.click(findTestObject('Mailinator/btnGO'))
 
-		WebUI.click(findTestObject('PageMailinator/labelFutureofworkcodemonk'))
+		WebUI.delay(2)
+		
+		WebUI.click(findTestObject('Mailinator/labelFutureofworkcodemonk'))
 
-		WebUI.switchToFrame(findTestObject('PageMailinator/frameEmailBody'), 5)
+		WebUI.switchToFrame(findTestObject('Mailinator/frameEmailBody'), 5)
+	}
+	
+	@When("{string} launches new window for Sign Up")
+	public void launches_new_window_for_Sign_Up(String WorkFlow) {
+		//WebUI.closeWindowIndex(currentTab)
+		
+		String currentPage2 = WebUI.getUrl()
+		
+		int currentTab2 = WebUI.getWindowIndex()
+		
+		WebUI.delay(2)
+		
+		WebUI.click(findTestObject('Mailinator/OK,Sign Me Up'))
+		
+		WebUI.switchToWindowIndex(currentTab2 + 1)
+	}
+	
+	
+	@When("{string} launches new window for Complete Profile")
+	public void launches_new_window_for_Complete_Profile(String WorkFlow) {
+		String currentPage2 = WebUI.getUrl()
+		
+		int currentTab2 = WebUI.getWindowIndex()
+		
+		WebUI.delay(2)
+		
+		WebUI.click(findTestObject('Mailinator/Complete My Profile'))
+		
+		WebUI.switchToWindowIndex(currentTab2 + 1);
+	}
+	
+	@Then("verifies if {string} page is launched")
+	public void verifies_if_page_is_launched(String link) {
+		WebUI.callTestCase(findTestCase("Test Cases/CommonTestCases/Verify Link"),['link' : link],FailureHandling.STOP_ON_FAILURE)
 	}
 
+	
 	@When("user launches new tab for Recommended jobs")
 	public void user_launches_new_tab_for_Recommended_jobs() {
 		String currentPage2 = WebUI.getUrl()
 
 		int currentTab2 = WebUI.getWindowIndex()
 
-		WebUI.click(findTestObject('PageMailinator/OK,Sign Me Up'))
+		WebUI.click(findTestObject('Mailinator/OK,Sign Me Up'))
 
 		WebUI.switchToWindowIndex(currentTab2 + 1)
 

@@ -27,3 +27,4 @@ WebUI.click(findTestObject('Profile/Log out'))
 
 
 WebUI.comment("Logging out from Profile")
+WebUI.comment("********************************************************")

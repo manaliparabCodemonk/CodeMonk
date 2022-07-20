@@ -9,15 +9,15 @@ Feature: Client Journeys - Create Talent, Edit Profile, Edit Email Id and Passwo
     When user read the test data sheet "ClientSignUp" from file "CodemonkTestdata.xls"
     And user selects "Continue with free plan"
   	#  
-    When user enter details on "About you" on "Talent" page
+    When user enter details on "About you" on "Client" page
     And clicks on "Continue" button and verify "About you" is completed
     And user selects "Continue with free plan"
       
-    And user enter details on "Company" on "Talent" page
+    And user enter details on "Company" on "Client" page
     And clicks on "Continue" button and verify "Company" is completed
     And user selects "Continue with free plan"   
     
-    And user enter details on "Locations" on "Talent" page
+    And user enter details on "Locations" on "Client" page
     And clicks on "Continue" button
      
     Then verify user is on "Client Dashboard" page
@@ -29,8 +29,11 @@ Feature: Client Journeys - Create Talent, Edit Profile, Edit Email Id and Passwo
  
     Given user launches "Codemonk" website
    	When user enters username and password for "Client"
-    When user read the test data sheet "Projects Briefs" from file "CodemonkTestdata.xls"
+    When user read the test data sheet "UpgradePlan" from file "CodemonkTestdata.xls"
 	  ##
+	  And user Upgrades Plan
+	  When user read the test data sheet "Projects Briefs" from file "CodemonkTestdata.xls"
+	 ##
 	  When user selects "New project"
  	  And user enter details on "Add Project" on "Project" for "1" time
  		Then verify project is added for "1" time
@@ -55,6 +58,5 @@ Feature: Client Journeys - Create Talent, Edit Profile, Edit Email Id and Passwo
  		 And user enter details on "Create brief" on "Project" for "3" time
  		Then verify brief is added for "3" time
  		##
- 		
-  
-  	 
+ 		And user logs out from application
+  	And closes browser

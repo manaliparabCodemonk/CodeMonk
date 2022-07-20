@@ -58,25 +58,12 @@ class CreateProjectBrief {
 
 	@Then("verify project is added for {string} time")
 	public void verify_project_is_added_for_time(String recordNum) {
-		//Click on Projects
-		WebUI.click(findTestObject('Dashboard/LeftPanelMenu/Projects'))
-
-		//Verify if Project is present or not
-		xpath="//div[text()='Test Project "+recordNum+"]"
-		assert WebUI.callTestCase(findTestCase('Test Cases/CommonTestCases/Verify Dynamic Object'), [('xpath') : xpath], FailureHandling.STOP_ON_FAILURE)
-
+		WebUI.callTestCase(findTestCase('Test Cases/CommonTestCases/VerifyProjectAdded'),['recordNum':recordNum], FailureHandling.STOP_ON_FAILURE)
+		
 	}
 
 	@Then("verify brief is added for {string} time")
 	public void verify_brief_is_added_for_time(String recordNum) {
-		//Click on Job Briefs
-		WebUI.click(findTestObject('Dashboard/LeftPanelMenu/Job Briefs'))
-
-		//Verify if Job Brief is present or not
-		xpath="//button[text()='Test Project "+recordNum+"]"
-		assert WebUI.callTestCase(findTestCase('Test Cases/CommonTestCases/Verify Dynamic Object'), [('xpath') : xpath], FailureHandling.STOP_ON_FAILURE)
-
-		//Click on Dashboard
-		WebUI.click(findTestObject('Dashboard/LeftPanelMenu/Dashboard'))
+		WebUI.callTestCase(findTestCase('Test Cases/CommonTestCases/VerifyBriefAdded'),['recordNum':recordNum], FailureHandling.STOP_ON_FAILURE)
 	}
 }

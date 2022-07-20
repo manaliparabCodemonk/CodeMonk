@@ -16,30 +16,43 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
-String workFlow
 //try {
 //    WebUI.click(findTestObject('SignUp/btnLoginHere'))
 //}
 //catch (Exception e) {
 //} 
-if(WorkFlow.contains('Talent')) {
+
+System.out.println(workFlow)
+if(workFlow.contains('Talent')) {
  
-	  WebUI.sendKeys(findTestObject('SignUp/txtboxEmail'), GlobalVariable.EmailTalent)
+	  WebUI.sendKeys(findTestObject('SignUp/Email'), GlobalVariable.EmailTalent)
       WebUI.sendKeys(findTestObject('SignUp/txtboxPassword'), GlobalVariable.PasswordTalent)
 	  
 	  WebUI.comment( GlobalVariable.EmailTalent +" is Logged In")
   }
-  else if(WorkFlow.contains('Client')) {
-	  WebUI.sendKeys(findTestObject('SignUp/txtboxEmail'), GlobalVariable.EmailClient)
+  else if(workFlow.contains('Client')) {
+	  WebUI.sendKeys(findTestObject('SignUp/Email'), GlobalVariable.EmailClient)
 	  WebUI.sendKeys(findTestObject('SignUp/txtboxPassword'), GlobalVariable.PasswordClient)
 	  
 	  WebUI.comment( GlobalVariable.EmailClient +" is Logged In")
   } 
-  else if(WorkFlow.contains('Admin')) {
-	  WebUI.sendKeys(findTestObject('SignUp/txtboxEmail'), GlobalVariable.EmailAdmin)
+  else if(workFlow.contains('Admin')) {
+	  WebUI.sendKeys(findTestObject('SignUp/Email'), GlobalVariable.EmailAdmin)
 	  WebUI.sendKeys(findTestObject('SignUp/txtboxPassword'), GlobalVariable.PasswordAdmin)
 	  
 	  WebUI.comment( "Admin is Logged In")
+  }
+  else if(workFlow.contains('Recruiter')) {
+	  WebUI.sendKeys(findTestObject('SignUp/Email'), GlobalVariable.EmailRecruiter)
+	  WebUI.sendKeys(findTestObject('SignUp/txtboxPassword'), GlobalVariable.PasswordRecruiter)
+	  System.out.println("Recruiter is Logged In")
+	  WebUI.comment( "Recruiter is Logged In")
+  }
+  else if(workFlow.contains('Ambassador')) {
+	  WebUI.sendKeys(findTestObject('SignUp/Email'), GlobalVariable.EmailAmbassador)
+	  WebUI.sendKeys(findTestObject('SignUp/txtboxPassword'), GlobalVariable.PasswordAmbassador)
+	  
+	  WebUI.comment("Ambassador is Logged In")
   }
 WebUI.click(findTestObject('SignUp/btnLogin'))
 

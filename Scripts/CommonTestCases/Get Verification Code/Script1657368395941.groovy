@@ -30,15 +30,23 @@ WebUI.switchToWindowIndex(currentTab + 1)
 
 WebUI.navigateToUrl('https://www.mailinator.com/v4/public/inboxes.jsp')
 
-WebUI.sendKeys(findTestObject('PageMailinator/txtboxPublicMessages'), Email)
+WebUI.delay(2)
 
-WebUI.click(findTestObject('PageMailinator/btnGO'))
+System.out.println("Email - " + Email)
 
-WebUI.click(findTestObject('PageMailinator/labelFutureofworkcodemonk'))
+WebUI.clearText(findTestObject('Mailinator/txtboxPublicMessages'))
 
-WebUI.switchToFrame(findTestObject('PageMailinator/frameEmailBody'), 5)
+WebUI.sendKeys(findTestObject('Mailinator/txtboxPublicMessages'), Email)
 
-code = WebUI.getText(findTestObject('PageMailinator/labelCode'))
+WebUI.click(findTestObject('Mailinator/btnGO'))
+
+WebUI.delay(2)
+
+WebUI.click(findTestObject('Mailinator/labelFutureofworkcodemonk'))
+
+WebUI.switchToFrame(findTestObject('Mailinator/frameEmailBody'), 5)
+
+code = WebUI.getText(findTestObject('Mailinator/labelCode'))
 
 //if(code.contains("Your application for Quality Analyst at Test Company"))
 //{

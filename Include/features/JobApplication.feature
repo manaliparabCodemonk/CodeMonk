@@ -4,8 +4,7 @@ Feature: Create Talent, Client and Client Posting 3 Job Briefs and 3 Projects, T
   Scenario: Create Talent
     
   	Given user launches "Codemonk" website for "Talent"
- 	  # When user enters username and password for "Talent"
-   
+ 	 
  	 When user creates email and password for "Talent"
    Then verify user is on "Talent About You" page
        
@@ -57,7 +56,10 @@ Feature: Create Talent, Client and Client Posting 3 Job Briefs and 3 Projects, T
     Then verify user is on "Client Dashboard" page
     
     ####################################Client creates Job Briefs and Projects #########################################################
-    When user read the test data sheet "Projects Briefs" from file "CodemonkTestdata.xls"
+    When user read the test data sheet "UpgradePlan" from file "CodemonkTestdata.xls"
+	  ##
+	  And user Upgrades Plan
+	  When user read the test data sheet "Projects Briefs" from file "CodemonkTestdata.xls"
 	  ##
 	  When user selects "New project"
  	  And user enter details on "Add Project" on "Project" for "1" time

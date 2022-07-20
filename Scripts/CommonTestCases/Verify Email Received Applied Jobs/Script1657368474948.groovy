@@ -29,18 +29,18 @@ import org.openqa.selenium.Keys as Keys
 
 	if(WorkFlow.contains('Talent'))
 	{
-	WebUI.sendKeys(findTestObject('PageMailinator/txtboxPublicMessages'), GlobalVariable.EmailTalent)
+	WebUI.sendKeys(findTestObject('Mailinator/txtboxPublicMessages'), GlobalVariable.EmailTalent)
 	}
 	else {
-		WebUI.sendKeys(findTestObject('PageMailinator/txtboxPublicMessages'), GlobalVariable.EmailClient)
+		WebUI.sendKeys(findTestObject('Mailinator/txtboxPublicMessages'), GlobalVariable.EmailClient)
 	}
-	WebUI.click(findTestObject('PageMailinator/btnGO'))
+	WebUI.click(findTestObject('Mailinator/btnGO'))
 
-	WebUI.click(findTestObject('PageMailinator/labelFutureofworkcodemonk'))
+	WebUI.click(findTestObject('Mailinator/labelFutureofworkcodemonk'))
 
-	WebUI.switchToFrame(findTestObject('PageMailinator/frameEmailBody'), 5)
+	WebUI.switchToFrame(findTestObject('Mailinator/frameEmailBody'), 5)
 	
-	code = WebUI.getText(findTestObject('PageMailinator/Your application'))
+	code = WebUI.getText(findTestObject('Mailinator/Your application'))
 	System.out.println(code);
 	if(code.contains("Your application for Quality Analyst at Test Company"))
 		{

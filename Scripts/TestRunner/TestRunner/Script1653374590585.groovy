@@ -21,8 +21,7 @@ import cucumber.api.CucumberOptions;
 import cucumber.api.junit.Cucumber;
 CucumberKW.runWithCucumberRunner(TestRunner.class)
 @RunWith(Cucumber.class)
-@CucumberOptions(features= ["Include/features/AllocateTalent.feature","Include/features/Timesheet.feature"],
-				tags="@Talent",
+@CucumberOptions(features= ["Include/features/AmbassadorJourney.feature","Include/features/RecruiterJourney.feature"],
 				 glue = "",
 				 plugin = ["pretty", "junit:Reports/cucumber.xml", "html:Reports", "json:Reports/cucumber.json"])
 public class TestRunner {

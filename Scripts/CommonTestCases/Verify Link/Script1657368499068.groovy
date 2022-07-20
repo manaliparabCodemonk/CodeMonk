@@ -18,6 +18,8 @@ import internal.GlobalVariable as GlobalVariable
 import static org.junit.Assert.assertTrue
 import org.openqa.selenium.Keys as Keys
 
+WebUI.delay(5)
+
 if (WebUI.getUrl().contains(link)) {
     System.out.println(WebUI.getUrl())
 

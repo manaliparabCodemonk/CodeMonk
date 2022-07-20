@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>Client Upgarde Plan</name>
+   <name>VerifyProjectAdded</name>
    <tag></tag>
    <comment></comment>
-   <testCaseGuid>fdc98ff5-20c0-4cac-9e19-709684008d8b</testCaseGuid>
+   <testCaseGuid>a5b1e1f6-18a1-4be5-aba7-7fc4da345496</testCaseGuid>
 </TestCaseEntity>

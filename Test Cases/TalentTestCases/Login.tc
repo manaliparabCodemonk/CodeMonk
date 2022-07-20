@@ -16,6 +16,6 @@
       <description></description>
       <id>2e3429cf-0cd9-4cdf-8430-712244cd1ee7</id>
       <masked>false</masked>
-      <name>WorkFlow</name>
+      <name>workFlow</name>
    </variable>
 </TestCaseEntity>

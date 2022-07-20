@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>txtboxEmail</name>
+   <name>Email</name>
    <tag></tag>
    <elementGuidId>d5c39231-b718-4d3e-a842-d45291f0acc8</elementGuidId>
    <selectorCollection>
@@ -22,6 +22,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>input</value>
+      <webElementGuid>e07336e2-0a5c-4eea-9466-70e188376989</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -29,6 +30,7 @@
       <name>placeholder</name>
       <type>Main</type>
       <value>e.g. johndoe@gmail.com</value>
+      <webElementGuid>4c21ac98-4e64-4ef6-87a8-bfbe0c8a5ab0</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -36,6 +38,7 @@
       <name>name</name>
       <type>Main</type>
       <value>email</value>
+      <webElementGuid>8c37b281-aad7-4de0-b2c6-7d636cad2e77</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -43,6 +46,7 @@
       <name>type</name>
       <type>Main</type>
       <value>text</value>
+      <webElementGuid>df5bdc56-4aeb-48ce-a221-6206aa91697f</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -50,6 +54,7 @@
       <name>class</name>
       <type>Main</type>
       <value>Input__FormControl-b1cggb-1 bSdorI form-control</value>
+      <webElementGuid>3e00440c-a7c3-471f-9d22-b8628c76d83b</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -57,6 +62,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;app&quot;)/div[1]/div[@class=&quot;styles__SignInContent-sc-1lnwj9y-3 joHtOJ layout-v2&quot;]/div[@class=&quot;styles__RightSection-sc-1lnwj9y-1 jxDbiC&quot;]/div[@class=&quot;inner-content my-auto&quot;]/div[@class=&quot;ContainerMod-zv7204-0 IIUgy w-auto p-0 container&quot;]/div[@class=&quot;Card-fhbg3m-0 cGuXWM p-0 bg-transparent&quot;]/form[1]/div[@class=&quot;OnboardingForm-bkqf63-0 lizanc&quot;]/div[@class=&quot;OnboardingForm__OnBoardingFormBody-bkqf63-1 jvWTLk m-0&quot;]/div[@class=&quot;position-relative form-group&quot;]/div[@class=&quot;Input__FormControlWrapper-b1cggb-6 kMxVjj  no-icon&quot;]/input[@class=&quot;Input__FormControl-b1cggb-1 bSdorI form-control&quot;]</value>
+      <webElementGuid>87256c41-9888-4c8f-973c-8878550bfee8</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -64,6 +70,7 @@
       <name>xpath:attributes</name>
       <type>Main</type>
       <value>//input[@name='email']</value>
+      <webElementGuid>6b211f56-55ee-4983-98ef-467739e0e899</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -71,6 +78,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//div[@id='app']/div/div[2]/div[2]/div/div/div/form/div/div/div[2]/div/input</value>
+      <webElementGuid>4b9fd28c-47de-40c6-a503-9d6b303e19fe</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -78,6 +86,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//input</value>
+      <webElementGuid>4520faf1-6d52-4e2c-b8ea-ad13fd1fc610</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -85,5 +94,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//input[@placeholder = 'e.g. johndoe@gmail.com' and @name = 'email' and @type = 'text']</value>
+      <webElementGuid>97874fcb-a0b0-4e39-a5ba-6e46d9bb75b3</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

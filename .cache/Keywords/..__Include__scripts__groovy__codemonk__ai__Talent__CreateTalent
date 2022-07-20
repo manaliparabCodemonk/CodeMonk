@@ -1,10 +1,10 @@
 {
-  "keywordFileContentHash": "0E6D8595586AE63A967283E0F62A1EAD",
+  "keywordFileContentHash": "47C4C3D3C3644C42F65FA9FA13A1CEED",
   "keywordClasses": [
     {
       "name": "codemonk.ai.Talent.CreateTalent",
       "keywordMethods": []
     }
   ],
-  "javadocParsed": false
+  "javadocParsed": true
 }

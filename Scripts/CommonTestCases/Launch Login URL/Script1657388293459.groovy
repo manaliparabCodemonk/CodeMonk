@@ -23,6 +23,6 @@ WebUI.openBrowser('')
 WebUI.navigateToUrl(GlobalVariable.LoginUrl)
 
 WebUI.maximizeWindow()
-
+WebUI.comment("********************************************************")
 WebUI.comment("Launched Browser with Login URL")
 return true

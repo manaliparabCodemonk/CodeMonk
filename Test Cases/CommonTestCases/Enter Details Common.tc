@@ -5,4 +5,17 @@
    <tag></tag>
    <comment></comment>
    <testCaseGuid>c7508559-4b6b-4394-92de-34e5f5609a6a</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>3439828e-3332-43b1-978b-71c1fa18a663</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>3439828e-3332-43b1-978b-71c1fa18a663</id>
+      <masked>false</masked>
+      <name>WorkFlow</name>
+   </variable>
 </TestCaseEntity>

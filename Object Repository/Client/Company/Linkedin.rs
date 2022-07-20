@@ -1,23 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>labelCode</name>
+   <name>Linkedin</name>
    <tag></tag>
-   <elementGuidId>4296fb04-54fc-429b-9021-b2428f6971ce</elementGuidId>
+   <elementGuidId>aff430a5-26c1-4b0b-aded-b665c0b5a39f</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>BASIC</key>
-         <value></value>
-      </entry>
-      <entry>
          <key>CSS</key>
-         <value>//table//tr[3]/td/div</value>
+         <value>input[name='linkedInUrl']</value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//table//tr[3]/td/div</value>
+      </entry>
+      <entry>
+         <key>BASIC</key>
       </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>CSS</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
 </WebElementEntity>

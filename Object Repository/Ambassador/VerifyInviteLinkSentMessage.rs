@@ -1,17 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>OK,Sign Me Up</name>
+   <name>VerifyInviteLinkSentMessage</name>
    <tag></tag>
-   <elementGuidId>6e8ab9f1-9807-4977-9642-a63e4cc1093d</elementGuidId>
+   <elementGuidId>24a5db2a-a3d6-4905-b231-3fa45ea0b463</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>BASIC</key>
-         <value></value>
+         <key>XPATH</key>
+         <value>//span[text()='Invite link sent successfully']</value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>//table//tr[5]/td//div</value>
+         <key>BASIC</key>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

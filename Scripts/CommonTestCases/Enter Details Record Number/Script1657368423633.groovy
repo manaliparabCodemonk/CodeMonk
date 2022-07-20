@@ -35,6 +35,6 @@ for (int i = 1; i < GlobalVariable.testData.length; i++) {
 		
 	    WebUI.callTestCase(findTestCase('Test Cases/CommonTestCases/Enter Details'), [('xlWorkflow') : xlWorkflow, ('xlPageName') : xlPageName
 			, ('xlFieldType') : xlFieldType, ('xlFieldLabel') : xlFieldLabel, ('xlFieldValue') : xlFieldValue], FailureHandling.STOP_ON_FAILURE)
-
+	
 		 }
 }

@@ -26,17 +26,17 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'Talent-non-disposable1445@mailinator.com'</initValue>
+      <initValue>''</initValue>
       <name>EmailTalent</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'AutoTest@123'</initValue>
+      <initValue>''</initValue>
       <name>PasswordTalent</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'AutoTest@123'</initValue>
+      <initValue>''</initValue>
       <name>PasswordClient</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
@@ -78,5 +78,35 @@
       <description></description>
       <initValue>''</initValue>
       <name>UniquePath</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'https://staging.codemonk.ai/talent-partner/signup'</initValue>
+      <name>RecruiterURL</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'https://staging.codemonk.ai/ambassador/signup'</initValue>
+      <name>AmbassadorURL</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>''</initValue>
+      <name>EmailRecruiter</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>''</initValue>
+      <name>PasswordRecruiter</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>''</initValue>
+      <name>EmailAmbassador</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>''</initValue>
+      <name>PasswordAmbassador</name>
    </GlobalVariableEntity>
 </GlobalVariableEntities>
